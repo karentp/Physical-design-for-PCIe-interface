@@ -34,11 +34,12 @@ module probadorMux2x18bits(
 
 
         //Mux 2x1 8bits
+        @(posedge clk);
         {In0} = 7'b0000000; 
         {In1} = 7'b0000011;
         {valid0} = 1'b1;
         {valid1} = 1'b1;
-        
+        	
         // Repite 8 veces
 		repeat (4) begin
 

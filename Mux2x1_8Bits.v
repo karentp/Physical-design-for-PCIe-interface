@@ -30,9 +30,6 @@ module Mux2x1_8Bits(
         outValid <= validTemp;
         
     end
-    // always @(posedge clk)begin
-    //     selector <= selector + 1;
-    // end
 
 endmodule
 
