@@ -1,4 +1,8 @@
-module Mux2x1_8Bits(input [7:0] In0,In1, input clk, valid0, valid1, output reg outValid, output reg [7:0] data_out);
+module Mux2x1_8Bits(
+    input [7:0] In0,In1,
+    input clk, valid0, valid1, clk2,
+    output reg outValid,
+    output reg [7:0] data_out);
 
     reg [7:0] ValorAnterior;
     reg  validTemp;
@@ -9,7 +13,7 @@ module Mux2x1_8Bits(input [7:0] In0,In1, input clk, valid0, valid1, output reg o
     end
 
     always @(*)begin
-        if(valid0 == 1 && selector == 0) begin
+        if(valid0 == 1 & selector == 0) begin
             ValorAnterior = In0;
             validTemp = valid0;
         end
@@ -20,10 +24,11 @@ module Mux2x1_8Bits(input [7:0] In0,In1, input clk, valid0, valid1, output reg o
         end
     end  
 
-    always @(posedge clk)begin
-        selector <= selector +1;       
+    always @(posedge clk2)begin
+        selector <= selector + 1;
         data_out <= ValorAnterior;
         outValid <= validTemp;
+        
     end
 
 endmodule

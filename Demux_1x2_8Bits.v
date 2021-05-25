@@ -1,4 +1,9 @@
-module Demux_1x2_8Bits( input [7:0] In0, input clk, validIn, output reg outValid0, outValid1,  output reg [7:0] data_out0,data_out1);
+module Demux_1x2_8Bits( 
+        input [7:0] In0, 
+        input clk, validIn, 
+        output reg outValid0, outValid1,  
+        output reg [7:0] data_out0,data_out1
+        );
 
 reg [7:0] ValorAnterior_out0;
 reg [7:0] ValorAnterior_out1;

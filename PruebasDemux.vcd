@@ -1,5 +1,9 @@
 $date
+<<<<<<< HEAD:PruebademuxJOSERolo.vcd
 	Tue May 25 00:22:27 2021
+=======
+	Mon May 24 23:54:31 2021
+>>>>>>> ce0ac1fbbcd33a89be8245ceb702db26b835003c:PruebasDemux.vcd
 $end
 $version
 	Icarus Verilog
@@ -9,10 +13,10 @@ $timescale
 $end
 $scope module BancoPruebaDemux $end
 $var wire 1 ! validIn $end
-$var wire 1 " outvalid1 $end
-$var wire 1 # outvalid0 $end
-$var wire 8 $ dataout1 [7:0] $end
-$var wire 8 % dataout0 [7:0] $end
+$var wire 1 " outValid1 $end
+$var wire 1 # outValid0 $end
+$var wire 8 $ data_out1 [7:0] $end
+$var wire 8 % data_out0 [7:0] $end
 $var wire 1 & clk $end
 $var wire 8 ' In0 [7:0] $end
 $scope module Demux1 $end
@@ -34,8 +38,8 @@ $var wire 8 0 data_out0 [7:0] $end
 $var wire 8 1 data_out1 [7:0] $end
 $var wire 1 # outValid0 $end
 $var wire 1 " outValid1 $end
+$var reg 8 2 In0 [7:0] $end
 $var reg 1 & clk $end
-$var reg 8 2 data_in [7:0] $end
 $var reg 1 ! validIn $end
 $upscope $end
 $upscope $end
