@@ -7,7 +7,16 @@ module Probador_phy_tx(
     output reg clk2,
     output reg clk4,
     output reg valid0, valid1, valid2, valid3,
-    input [7:0] data_out
+    input [7:0] data_out,
+
+    ///// Reciclación
+
+    input [7:0] data_Probador0,
+    input [7:0] data_Probador1,
+    input [7:0] data_Probador2,
+    input [7:0] data_Probador3,
+    input valid_out,
+    output reg validIn 
 );
 
 initial begin
@@ -19,6 +28,7 @@ initial begin
 
         //Mux 2x1 8bits
         @(posedge clk);
+        validIn <= 1'b1;
         In0 <= 8'b11111111; 
         In1 <= 8'b11101110;
         In2 <= 8'b11011101;
@@ -47,11 +57,33 @@ initial begin
         @(posedge clk);
         valid2 <= 1'b0;
         @(posedge clk);
+
+
+        ///// Prueba Circulación
+
+        validIn <= 1'b0;
+        In0 <= 8'b11111111; 
+        In1 <= 8'b11101110;
+        In2 <= 8'b11011101;
+        In3 <= 8'b11001100;
+        valid0 <= 1'b1;
+        valid1 <= 1'b1;
+        valid2 <= 1'b1;
+        valid3 <= 1'b1;
+        @(posedge clk);
+        In0 <= 8'b10111011; 
+        In1 <= 8'b10101010;
+        In2 <= 8'b10011001;
+        In3 <= 8'b10001000; 
+		@(posedge clk);
+
+
          //Mux 2x1 8bits
         In0 <= 8'b00000000;
         In1 <= 8'b00000000; 
         In2 <= 8'b00000000; 
         In3 <= 8'b00000000;
+        @(posedge clk);
         // Termina de almacenar señales
 		$finish;
 
