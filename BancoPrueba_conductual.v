@@ -38,8 +38,7 @@ module BancoPruebas;
 				   .In1			(In1[7:0]),
 				   .clk			(clk),
 				   .valid0		(valid0),
-				   .valid1		(valid1),
-				   .clk2		(clk2));
+				   .valid1		(valid1));
 
 
 	// Probador: generador de señales y monitor, depende del MUX que se este probando
