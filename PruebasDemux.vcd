@@ -1,0 +1,172 @@
+$date
+	Mon May 24 23:54:31 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPruebaDemux $end
+$var wire 1 ! validIn $end
+$var wire 1 " outValid1 $end
+$var wire 1 # outValid0 $end
+$var wire 8 $ data_out1 [7:0] $end
+$var wire 8 % data_out0 [7:0] $end
+$var wire 1 & clk $end
+$var wire 8 ' In0 [7:0] $end
+$scope module Demux1 $end
+$var wire 1 ! validIn $end
+$var wire 1 & clk $end
+$var wire 8 ( In0 [7:0] $end
+$var reg 8 ) ValorAnterior_out0 [7:0] $end
+$var reg 8 * ValorAnterior_out1 [7:0] $end
+$var reg 8 + data_out0 [7:0] $end
+$var reg 8 , data_out1 [7:0] $end
+$var reg 1 # outValid0 $end
+$var reg 1 " outValid1 $end
+$var reg 1 - selector $end
+$var reg 1 . validTemp_In0 $end
+$var reg 1 / validTemp_In1 $end
+$upscope $end
+$scope module prob $end
+$var wire 8 0 data_out0 [7:0] $end
+$var wire 8 1 data_out1 [7:0] $end
+$var wire 1 # outValid0 $end
+$var wire 1 " outValid1 $end
+$var reg 8 2 In0 [7:0] $end
+$var reg 1 & clk $end
+$var reg 1 ! validIn $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 2
+bx 1
+bx 0
+x/
+1.
+0-
+bx ,
+bx +
+bx *
+b0 )
+b0 (
+b0 '
+0&
+bx %
+bx $
+x#
+x"
+1!
+$end
+#200
+1/
+b1 *
+1#
+b0 %
+b0 +
+b0 0
+1-
+b1 '
+b1 (
+b1 2
+1&
+#400
+0&
+#600
+b10 )
+b10 '
+b10 (
+b10 2
+1"
+b1 $
+b1 ,
+b1 1
+0-
+1&
+#800
+0&
+#1000
+b11 *
+b10 %
+b10 +
+b10 0
+1-
+b11 '
+b11 (
+b11 2
+1&
+#1200
+0&
+#1400
+b100 )
+b100 '
+b100 (
+b100 2
+b11 $
+b11 ,
+b11 1
+0-
+1&
+#1600
+0&
+#1800
+b101 *
+b100 %
+b100 +
+b100 0
+1-
+b101 '
+b101 (
+b101 2
+1&
+#2000
+0&
+#2200
+b110 )
+b110 '
+b110 (
+b110 2
+b101 $
+b101 ,
+b101 1
+0-
+1&
+#2400
+0&
+#2600
+b111 *
+b110 %
+b110 +
+b110 0
+1-
+b111 '
+b111 (
+b111 2
+1&
+#2800
+0&
+#3000
+b1000 )
+b1000 '
+b1000 (
+b1000 2
+b111 $
+b111 ,
+b111 1
+0-
+1&
+#3200
+0&
+#3400
+b1000 %
+b1000 +
+b1000 0
+1-
+0!
+b0 '
+b0 (
+b0 2
+1&

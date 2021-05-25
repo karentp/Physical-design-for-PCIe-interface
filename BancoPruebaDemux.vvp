@@ -1,0 +1,175 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fffbecfada0 .scope module, "BancoPruebaDemux" "BancoPruebaDemux" 2 6;
+ .timescale -9 -10;
+v0x7fffbed183c0_0 .net "In0", 7 0, v0x7fffbed17e40_0;  1 drivers
+v0x7fffbed184f0_0 .net "clk", 0 0, v0x7fffbed17f00_0;  1 drivers
+v0x7fffbed18600_0 .net "data_out0", 7 0, v0x7fffbed17480_0;  1 drivers
+v0x7fffbed186f0_0 .net "data_out1", 7 0, v0x7fffbed175b0_0;  1 drivers
+v0x7fffbed187e0_0 .net "outValid0", 0 0, v0x7fffbed17690_0;  1 drivers
+v0x7fffbed18920_0 .net "outValid1", 0 0, v0x7fffbed17750_0;  1 drivers
+v0x7fffbed18a10_0 .net "validIn", 0 0, v0x7fffbed182d0_0;  1 drivers
+S_0x7fffbecfaf20 .scope module, "Demux1" "Demux_1x2_8Bits" 2 20, 3 1 0, S_0x7fffbecfada0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 8 "In0"
+    .port_info 1 /INPUT 1 "clk"
+    .port_info 2 /INPUT 1 "validIn"
+    .port_info 3 /OUTPUT 1 "outValid0"
+    .port_info 4 /OUTPUT 1 "outValid1"
+    .port_info 5 /OUTPUT 8 "data_out0"
+    .port_info 6 /OUTPUT 8 "data_out1"
+v0x7fffbecebd20_0 .net "In0", 7 0, v0x7fffbed17e40_0;  alias, 1 drivers
+v0x7fffbecec1d0_0 .var "ValorAnterior_out0", 7 0;
+v0x7fffbed17300_0 .var "ValorAnterior_out1", 7 0;
+v0x7fffbed173c0_0 .net "clk", 0 0, v0x7fffbed17f00_0;  alias, 1 drivers
+v0x7fffbed17480_0 .var "data_out0", 7 0;
+v0x7fffbed175b0_0 .var "data_out1", 7 0;
+v0x7fffbed17690_0 .var "outValid0", 0 0;
+v0x7fffbed17750_0 .var "outValid1", 0 0;
+v0x7fffbed17810_0 .var "selector", 0 0;
+v0x7fffbed178d0_0 .net "validIn", 0 0, v0x7fffbed182d0_0;  alias, 1 drivers
+v0x7fffbed17990_0 .var "validTemp_In0", 0 0;
+v0x7fffbed17a50_0 .var "validTemp_In1", 0 0;
+E_0x7fffbed03fd0 .event posedge, v0x7fffbed173c0_0;
+E_0x7fffbed04140 .event edge, v0x7fffbed178d0_0, v0x7fffbed17810_0, v0x7fffbecebd20_0;
+S_0x7fffbed17bf0 .scope module, "prob" "probadorDemux" 2 30, 4 1 0, S_0x7fffbecfada0;
+ .timescale -9 -10;
+    .port_info 0 /OUTPUT 1 "clk"
+    .port_info 1 /OUTPUT 1 "validIn"
+    .port_info 2 /OUTPUT 8 "In0"
+    .port_info 3 /INPUT 8 "data_out0"
+    .port_info 4 /INPUT 8 "data_out1"
+    .port_info 5 /INPUT 1 "outValid0"
+    .port_info 6 /INPUT 1 "outValid1"
+v0x7fffbed17e40_0 .var "In0", 7 0;
+v0x7fffbed17f00_0 .var "clk", 0 0;
+v0x7fffbed17fa0_0 .net "data_out0", 7 0, v0x7fffbed17480_0;  alias, 1 drivers
+v0x7fffbed18040_0 .net "data_out1", 7 0, v0x7fffbed175b0_0;  alias, 1 drivers
+v0x7fffbed18110_0 .net "outValid0", 0 0, v0x7fffbed17690_0;  alias, 1 drivers
+v0x7fffbed18200_0 .net "outValid1", 0 0, v0x7fffbed17750_0;  alias, 1 drivers
+v0x7fffbed182d0_0 .var "validIn", 0 0;
+    .scope S_0x7fffbecfaf20;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fffbed17810_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x7fffbecfaf20;
+T_1 ;
+    %wait E_0x7fffbed04140;
+    %load/vec4 v0x7fffbed178d0_0;
+    %pad/u 32;
+    %pushi/vec4 1, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %load/vec4 v0x7fffbed17810_0;
+    %pad/u 32;
+    %pushi/vec4 0, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %load/vec4 v0x7fffbecebd20_0;
+    %store/vec4 v0x7fffbecec1d0_0, 0, 8;
+    %load/vec4 v0x7fffbed178d0_0;
+    %store/vec4 v0x7fffbed17990_0, 0, 1;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0x7fffbed178d0_0;
+    %pad/u 32;
+    %pushi/vec4 1, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %load/vec4 v0x7fffbed17810_0;
+    %pad/u 32;
+    %pushi/vec4 1, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.2, 8;
+    %load/vec4 v0x7fffbecebd20_0;
+    %store/vec4 v0x7fffbed17300_0, 0, 8;
+    %load/vec4 v0x7fffbed178d0_0;
+    %store/vec4 v0x7fffbed17a50_0, 0, 1;
+T_1.2 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_0x7fffbecfaf20;
+T_2 ;
+    %wait E_0x7fffbed03fd0;
+    %load/vec4 v0x7fffbed17810_0;
+    %pad/u 2;
+    %addi 1, 0, 2;
+    %pad/u 1;
+    %assign/vec4 v0x7fffbed17810_0, 0;
+    %load/vec4 v0x7fffbecec1d0_0;
+    %assign/vec4 v0x7fffbed17480_0, 0;
+    %load/vec4 v0x7fffbed17300_0;
+    %assign/vec4 v0x7fffbed175b0_0, 0;
+    %load/vec4 v0x7fffbed17990_0;
+    %assign/vec4 v0x7fffbed17690_0, 0;
+    %load/vec4 v0x7fffbed17a50_0;
+    %assign/vec4 v0x7fffbed17750_0, 0;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x7fffbed17bf0;
+T_3 ;
+    %vpi_call 4 13 "$dumpfile", "PruebasDemux.vcd" {0 0 0};
+    %vpi_call 4 14 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x7fffbed17e40_0, 0, 8;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fffbed182d0_0, 0, 1;
+    %pushi/vec4 8, 0, 32;
+T_3.0 %dup/vec4;
+    %pushi/vec4 0, 0, 32;
+    %cmp/s;
+    %jmp/1xz T_3.1, 5;
+    %jmp/1 T_3.1, 4;
+    %pushi/vec4 1, 0, 32;
+    %sub;
+    %wait E_0x7fffbed03fd0;
+    %load/vec4 v0x7fffbed17e40_0;
+    %addi 1, 0, 8;
+    %assign/vec4 v0x7fffbed17e40_0, 0;
+    %jmp T_3.0;
+T_3.1 ;
+    %pop/vec4 1;
+    %wait E_0x7fffbed03fd0;
+    %pushi/vec4 0, 0, 9;
+    %split/vec4 8;
+    %assign/vec4 v0x7fffbed17e40_0, 0;
+    %assign/vec4 v0x7fffbed182d0_0, 0;
+    %vpi_call 4 34 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+    .scope S_0x7fffbed17bf0;
+T_4 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x7fffbed17f00_0, 0;
+    %end;
+    .thread T_4;
+    .scope S_0x7fffbed17bf0;
+T_5 ;
+    %delay 200, 0;
+    %load/vec4 v0x7fffbed17f00_0;
+    %inv;
+    %assign/vec4 v0x7fffbed17f00_0, 0;
+    %jmp T_5;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "BancoPruebaDemux.v";
+    "./Demux_1x2_8Bits.v";
+    "./probadorDemux.v";
