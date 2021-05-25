@@ -1,0 +1,363 @@
+$date
+	Tue May 25 01:44:30 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPruebaDemux1x4_8Bits $end
+$var wire 1 ! validIn $end
+$var wire 1 " outvalid3 $end
+$var wire 1 # outvalid2 $end
+$var wire 1 $ outvalid1 $end
+$var wire 1 % outvalid0 $end
+$var wire 8 & dataout3 [7:0] $end
+$var wire 8 ' dataout2 [7:0] $end
+$var wire 8 ( dataout1 [7:0] $end
+$var wire 8 ) dataout0 [7:0] $end
+$var wire 1 * clk $end
+$var wire 8 + In0 [7:0] $end
+$scope module Demux_1x4 $end
+$var wire 1 " validOut3 $end
+$var wire 1 # validOut2 $end
+$var wire 1 $ validOut1 $end
+$var wire 1 % validOut0 $end
+$var wire 1 ! validIn $end
+$var wire 1 , valid1Temp $end
+$var wire 1 - valid0Temp $end
+$var wire 8 . salida1Demux1 [7:0] $end
+$var wire 8 / salida0Demux1 [7:0] $end
+$var wire 8 0 data_out3 [7:0] $end
+$var wire 8 1 data_out2 [7:0] $end
+$var wire 8 2 data_out1 [7:0] $end
+$var wire 8 3 data_out0 [7:0] $end
+$var wire 1 * clk $end
+$var wire 8 4 In [7:0] $end
+$scope module Demux1 $end
+$var wire 1 ! validIn $end
+$var wire 1 * clk $end
+$var wire 8 5 In0 [7:0] $end
+$var reg 8 6 ValorAnterior_out0 [7:0] $end
+$var reg 8 7 ValorAnterior_out1 [7:0] $end
+$var reg 8 8 data_out0 [7:0] $end
+$var reg 8 9 data_out1 [7:0] $end
+$var reg 1 - outValid0 $end
+$var reg 1 , outValid1 $end
+$var reg 1 : selector $end
+$var reg 1 ; validTemp_In0 $end
+$var reg 1 < validTemp_In1 $end
+$upscope $end
+$scope module Demux2 $end
+$var wire 8 = In0 [7:0] $end
+$var wire 1 - validIn $end
+$var wire 1 * clk $end
+$var reg 8 > ValorAnterior_out0 [7:0] $end
+$var reg 8 ? ValorAnterior_out1 [7:0] $end
+$var reg 8 @ data_out0 [7:0] $end
+$var reg 8 A data_out1 [7:0] $end
+$var reg 1 % outValid0 $end
+$var reg 1 $ outValid1 $end
+$var reg 1 B selector $end
+$var reg 1 C validTemp_In0 $end
+$var reg 1 D validTemp_In1 $end
+$upscope $end
+$scope module Demux3 $end
+$var wire 8 E In0 [7:0] $end
+$var wire 1 , validIn $end
+$var wire 1 * clk $end
+$var reg 8 F ValorAnterior_out0 [7:0] $end
+$var reg 8 G ValorAnterior_out1 [7:0] $end
+$var reg 8 H data_out0 [7:0] $end
+$var reg 8 I data_out1 [7:0] $end
+$var reg 1 # outValid0 $end
+$var reg 1 " outValid1 $end
+$var reg 1 J selector $end
+$var reg 1 K validTemp_In0 $end
+$var reg 1 L validTemp_In1 $end
+$upscope $end
+$upscope $end
+$scope module prob $end
+$var wire 8 M data_out0 [7:0] $end
+$var wire 8 N data_out1 [7:0] $end
+$var wire 8 O data_out2 [7:0] $end
+$var wire 8 P data_out3 [7:0] $end
+$var wire 1 % outValid0 $end
+$var wire 1 $ outValid1 $end
+$var wire 1 Q outValid2 $end
+$var wire 1 R outValid3 $end
+$var reg 8 S In [7:0] $end
+$var reg 1 * clk $end
+$var reg 1 ! validIn $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 S
+zR
+zQ
+bz P
+bz O
+bx N
+bx M
+xL
+xK
+0J
+bx I
+bx H
+bx G
+bx F
+bx E
+xD
+xC
+0B
+bx A
+bx @
+bx ?
+bx >
+bx =
+x<
+1;
+0:
+bx 9
+bx 8
+bx 7
+b0 6
+b0 5
+b0 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+x-
+x,
+b0 +
+0*
+bx )
+bx (
+bx '
+bx &
+x%
+x$
+x#
+x"
+1!
+$end
+#200
+1D
+b0 ?
+1<
+b1 7
+1-
+b0 /
+b0 8
+b0 =
+1:
+1B
+1J
+b1 +
+b1 4
+b1 5
+b1 S
+1*
+#400
+0*
+#600
+1C
+b0 >
+1K
+b1 F
+b10 6
+b10 +
+b10 4
+b10 5
+b10 S
+0J
+1$
+b0 (
+b0 2
+b0 A
+b0 N
+0B
+1,
+b1 .
+b1 9
+b1 E
+0:
+1*
+#800
+0*
+#1000
+b10 ?
+1L
+b1 G
+b11 7
+b10 /
+b10 8
+b10 =
+1:
+1%
+b0 )
+b0 3
+b0 @
+b0 M
+1B
+1#
+b1 '
+b1 1
+b1 H
+1J
+b11 +
+b11 4
+b11 5
+b11 S
+1*
+#1200
+0*
+#1400
+b10 >
+b11 F
+b100 6
+b100 +
+b100 4
+b100 5
+b100 S
+1"
+b1 &
+b1 0
+b1 I
+0J
+b10 (
+b10 2
+b10 A
+b10 N
+0B
+b11 .
+b11 9
+b11 E
+0:
+1*
+#1600
+0*
+#1800
+b100 ?
+b11 G
+b101 7
+b100 /
+b100 8
+b100 =
+1:
+b10 )
+b10 3
+b10 @
+b10 M
+1B
+b11 '
+b11 1
+b11 H
+1J
+b101 +
+b101 4
+b101 5
+b101 S
+1*
+#2000
+0*
+#2200
+b100 >
+b101 F
+b110 6
+b110 +
+b110 4
+b110 5
+b110 S
+b11 &
+b11 0
+b11 I
+0J
+b100 (
+b100 2
+b100 A
+b100 N
+0B
+b101 .
+b101 9
+b101 E
+0:
+1*
+#2400
+0*
+#2600
+b110 ?
+b101 G
+b111 7
+b110 /
+b110 8
+b110 =
+1:
+b100 )
+b100 3
+b100 @
+b100 M
+1B
+b101 '
+b101 1
+b101 H
+1J
+b111 +
+b111 4
+b111 5
+b111 S
+1*
+#2800
+0*
+#3000
+b110 >
+b111 F
+b1000 6
+b1000 +
+b1000 4
+b1000 5
+b1000 S
+b101 &
+b101 0
+b101 I
+0J
+b110 (
+b110 2
+b110 A
+b110 N
+0B
+b111 .
+b111 9
+b111 E
+0:
+1*
+#3200
+0*
+#3400
+b1000 ?
+b111 G
+b1000 /
+b1000 8
+b1000 =
+1:
+b110 )
+b110 3
+b110 @
+b110 M
+1B
+b111 '
+b111 1
+b111 H
+1J
+0!
+b0 +
+b0 4
+b0 5
+b0 S
+1*
