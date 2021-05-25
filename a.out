@@ -7,170 +7,218 @@
 :vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
-S_000000000018e300 .scope module, "BancoPruebaDemux" "BancoPruebaDemux" 2 6;
+S_0000000000e487d0 .scope module, "BancoPruebaRecirculacion" "BancoPruebaRecirculacion" 2 6;
  .timescale -9 -10;
-v00000000008f4530_0 .net "In0", 7 0, v000000000018b9d0_0;  1 drivers
-v00000000008f4490_0 .net "clk", 0 0, v0000000000186b60_0;  1 drivers
-v00000000008f45d0_0 .net "dataout0", 7 0, v000000000018e620_0;  1 drivers
-v00000000008f4030_0 .net "dataout1", 7 0, v000000000018e6c0_0;  1 drivers
-v00000000008f4670_0 .net "outvalid0", 0 0, v0000000000186720_0;  1 drivers
-v00000000008f4df0_0 .net "outvalid1", 0 0, v00000000001867c0_0;  1 drivers
-v00000000008f4990_0 .net "validIn", 0 0, v00000000008f4e90_0;  1 drivers
-S_000000000018e490 .scope module, "Demux1" "Demux_1x2_8Bits" 2 13, 3 1 0, S_000000000018e300;
+v0000000000eb6e00_0 .net "In0", 7 0, v0000000000eb6220_0;  1 drivers
+v0000000000eb6400_0 .net "In1", 7 0, v0000000000eb6ea0_0;  1 drivers
+v0000000000eb6180_0 .net "In2", 7 0, v0000000000eb6c20_0;  1 drivers
+v0000000000eb64a0_0 .net "In3", 7 0, v0000000000eb6360_0;  1 drivers
+v0000000000eb69a0_0 .net "data_Mux0", 7 0, v0000000000e61fa0_0;  1 drivers
+v0000000000eb62c0_0 .net "data_Mux1", 7 0, v0000000000e62040_0;  1 drivers
+v0000000000eb6860_0 .net "data_Mux2", 7 0, v0000000000e620e0_0;  1 drivers
+v0000000000eb67c0_0 .net "data_Mux3", 7 0, v0000000000f86700_0;  1 drivers
+v0000000000eb6900_0 .net "data_Probador0", 7 0, v0000000000e61d20_0;  1 drivers
+v0000000000eb6ae0_0 .net "data_Probador1", 7 0, v0000000000e61dc0_0;  1 drivers
+v0000000000eb7d60_0 .net "data_Probador2", 7 0, v0000000000e61e60_0;  1 drivers
+v0000000000eb9520_0 .net "data_Probador3", 7 0, v0000000000e61f00_0;  1 drivers
+v0000000000eb93e0_0 .net "validIn", 0 0, v0000000000eb6680_0;  1 drivers
+S_0000000000e48960 .scope module, "ParteRecirculacion" "Recirculacion" 2 13, 3 1 0, S_0000000000e487d0;
  .timescale -9 -10;
     .port_info 0 /INPUT 8 "In0";
-    .port_info 1 /INPUT 1 "clk";
-    .port_info 2 /INPUT 1 "validIn";
-    .port_info 3 /OUTPUT 1 "outValid0";
-    .port_info 4 /OUTPUT 1 "outValid1";
-    .port_info 5 /OUTPUT 8 "data_out0";
-    .port_info 6 /OUTPUT 8 "data_out1";
-v0000000000186f50_0 .net "In0", 7 0, v000000000018b9d0_0;  alias, 1 drivers
-v00000000008addc0_0 .var "ValorAnterior_out0", 7 0;
-v000000000018b260_0 .var "ValorAnterior_out1", 7 0;
-v000000000018b300_0 .net "clk", 0 0, v0000000000186b60_0;  alias, 1 drivers
-v000000000018e620_0 .var "data_out0", 7 0;
-v000000000018e6c0_0 .var "data_out1", 7 0;
-v0000000000186720_0 .var "outValid0", 0 0;
-v00000000001867c0_0 .var "outValid1", 0 0;
-v0000000000186860_0 .var "selector", 0 0;
-v0000000000186900_0 .net "validIn", 0 0, v00000000008f4e90_0;  alias, 1 drivers
-v00000000001869a0_0 .var "validTemp_In0", 0 0;
-v0000000000186a40_0 .var "validTemp_In1", 0 0;
-E_00000000008ae130 .event posedge, v000000000018b300_0;
-E_00000000008ae4f0 .event edge, v0000000000186900_0, v0000000000186860_0, v0000000000186f50_0;
-S_000000000018b840 .scope module, "prob" "probadorDemux" 2 15, 4 1 0, S_000000000018e300;
+    .port_info 1 /INPUT 8 "In1";
+    .port_info 2 /INPUT 8 "In2";
+    .port_info 3 /INPUT 8 "In3";
+    .port_info 4 /INPUT 1 "validIn";
+    .port_info 5 /OUTPUT 8 "data_mux0";
+    .port_info 6 /OUTPUT 8 "data_Probador0";
+    .port_info 7 /OUTPUT 8 "data_mux1";
+    .port_info 8 /OUTPUT 8 "data_Probador1";
+    .port_info 9 /OUTPUT 8 "data_mux2";
+    .port_info 10 /OUTPUT 8 "data_Probador2";
+    .port_info 11 /OUTPUT 8 "data_mux3";
+    .port_info 12 /OUTPUT 8 "data_Probador3";
+v0000000000f86f30_0 .net "In0", 7 0, v0000000000eb6220_0;  alias, 1 drivers
+v0000000000e587b0_0 .net "In1", 7 0, v0000000000eb6ea0_0;  alias, 1 drivers
+v0000000000f8bdd0_0 .net "In2", 7 0, v0000000000eb6c20_0;  alias, 1 drivers
+v0000000000f8be70_0 .net "In3", 7 0, v0000000000eb6360_0;  alias, 1 drivers
+v0000000000e61d20_0 .var "data_Probador0", 7 0;
+v0000000000e61dc0_0 .var "data_Probador1", 7 0;
+v0000000000e61e60_0 .var "data_Probador2", 7 0;
+v0000000000e61f00_0 .var "data_Probador3", 7 0;
+v0000000000e61fa0_0 .var "data_mux0", 7 0;
+v0000000000e62040_0 .var "data_mux1", 7 0;
+v0000000000e620e0_0 .var "data_mux2", 7 0;
+v0000000000f86700_0 .var "data_mux3", 7 0;
+v0000000000eb6540_0 .net "validIn", 0 0, v0000000000eb6680_0;  alias, 1 drivers
+E_0000000000e47430 .event edge, v0000000000eb6540_0, v0000000000f8be70_0;
+E_0000000000e470f0 .event edge, v0000000000eb6540_0, v0000000000f8bdd0_0;
+E_0000000000e467f0 .event edge, v0000000000eb6540_0, v0000000000e587b0_0;
+E_0000000000e46e30 .event edge, v0000000000eb6540_0, v0000000000f86f30_0;
+S_0000000000f867a0 .scope module, "prob" "probadorRecirculacion" 2 15, 4 1 0, S_0000000000e487d0;
  .timescale -9 -10;
     .port_info 0 /OUTPUT 1 "clk";
     .port_info 1 /OUTPUT 1 "validIn";
-    .port_info 2 /OUTPUT 8 "data_in";
-    .port_info 3 /INPUT 8 "data_out0";
-    .port_info 4 /INPUT 8 "data_out1";
-    .port_info 5 /INPUT 1 "outValid0";
-    .port_info 6 /INPUT 1 "outValid1";
-v0000000000186b60_0 .var "clk", 0 0;
-v000000000018b9d0_0 .var "data_in", 7 0;
-v000000000018ba70_0 .net "data_out0", 7 0, v000000000018e620_0;  alias, 1 drivers
-v00000000008f43f0_0 .net "data_out1", 7 0, v000000000018e6c0_0;  alias, 1 drivers
-v00000000008f4a30_0 .net "outValid0", 0 0, v0000000000186720_0;  alias, 1 drivers
-v00000000008f42b0_0 .net "outValid1", 0 0, v00000000001867c0_0;  alias, 1 drivers
-v00000000008f4e90_0 .var "validIn", 0 0;
-    .scope S_000000000018e490;
+    .port_info 2 /OUTPUT 8 "In0";
+    .port_info 3 /OUTPUT 8 "In1";
+    .port_info 4 /OUTPUT 8 "In2";
+    .port_info 5 /OUTPUT 8 "In3";
+    .port_info 6 /INPUT 8 "data_Mux0";
+    .port_info 7 /INPUT 8 "data_Probador0";
+    .port_info 8 /INPUT 8 "data_Mux1";
+    .port_info 9 /INPUT 8 "data_Probador1";
+    .port_info 10 /INPUT 8 "data_Mux2";
+    .port_info 11 /INPUT 8 "data_Probador2";
+    .port_info 12 /INPUT 8 "data_Mux3";
+    .port_info 13 /INPUT 8 "data_Probador3";
+v0000000000eb6220_0 .var "In0", 7 0;
+v0000000000eb6ea0_0 .var "In1", 7 0;
+v0000000000eb6c20_0 .var "In2", 7 0;
+v0000000000eb6360_0 .var "In3", 7 0;
+v0000000000eb6a40_0 .var "clk", 0 0;
+v0000000000eb6f40_0 .net "data_Mux0", 7 0, v0000000000e61fa0_0;  alias, 1 drivers
+v0000000000eb65e0_0 .net "data_Mux1", 7 0, v0000000000e62040_0;  alias, 1 drivers
+v0000000000eb6d60_0 .net "data_Mux2", 7 0, v0000000000e620e0_0;  alias, 1 drivers
+v0000000000eb6040_0 .net "data_Mux3", 7 0, v0000000000f86700_0;  alias, 1 drivers
+v0000000000eb60e0_0 .net "data_Probador0", 7 0, v0000000000e61d20_0;  alias, 1 drivers
+v0000000000eb6720_0 .net "data_Probador1", 7 0, v0000000000e61dc0_0;  alias, 1 drivers
+v0000000000eb6cc0_0 .net "data_Probador2", 7 0, v0000000000e61e60_0;  alias, 1 drivers
+v0000000000eb6b80_0 .net "data_Probador3", 7 0, v0000000000e61f00_0;  alias, 1 drivers
+v0000000000eb6680_0 .var "validIn", 0 0;
+E_0000000000e46830 .event posedge, v0000000000eb6a40_0;
+    .scope S_0000000000e48960;
 T_0 ;
-    %pushi/vec4 0, 0, 1;
-    %store/vec4 v0000000000186860_0, 0, 1;
-    %end;
-    .thread T_0;
-    .scope S_000000000018e490;
+    %wait E_0000000000e46e30;
+    %load/vec4 v0000000000eb6540_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_0.0, 4;
+    %load/vec4 v0000000000f86f30_0;
+    %store/vec4 v0000000000e61fa0_0, 0, 8;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0000000000f86f30_0;
+    %store/vec4 v0000000000e61d20_0, 0, 8;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0000000000e48960;
 T_1 ;
-    %wait E_00000000008ae4f0;
-    %load/vec4 v0000000000186900_0;
+    %wait E_0000000000e467f0;
+    %load/vec4 v0000000000eb6540_0;
     %pad/u 32;
-    %pushi/vec4 1, 0, 32;
-    %cmp/e;
-    %flag_get/vec4 4;
-    %load/vec4 v0000000000186860_0;
-    %pad/u 32;
-    %pushi/vec4 0, 0, 32;
-    %cmp/e;
-    %flag_get/vec4 4;
-    %and;
-    %flag_set/vec4 8;
-    %jmp/0xz  T_1.0, 8;
-    %load/vec4 v0000000000186f50_0;
-    %store/vec4 v00000000008addc0_0, 0, 8;
-    %load/vec4 v0000000000186900_0;
-    %store/vec4 v00000000001869a0_0, 0, 1;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_1.0, 4;
+    %load/vec4 v0000000000e587b0_0;
+    %store/vec4 v0000000000e62040_0, 0, 8;
     %jmp T_1.1;
 T_1.0 ;
-    %load/vec4 v0000000000186900_0;
-    %pad/u 32;
-    %pushi/vec4 1, 0, 32;
-    %cmp/e;
-    %flag_get/vec4 4;
-    %load/vec4 v0000000000186860_0;
-    %pad/u 32;
-    %pushi/vec4 1, 0, 32;
-    %cmp/e;
-    %flag_get/vec4 4;
-    %and;
-    %flag_set/vec4 8;
-    %jmp/0xz  T_1.2, 8;
-    %load/vec4 v0000000000186f50_0;
-    %store/vec4 v000000000018b260_0, 0, 8;
-    %load/vec4 v0000000000186900_0;
-    %store/vec4 v0000000000186a40_0, 0, 1;
-T_1.2 ;
+    %load/vec4 v0000000000e587b0_0;
+    %store/vec4 v0000000000e61dc0_0, 0, 8;
 T_1.1 ;
     %jmp T_1;
     .thread T_1, $push;
-    .scope S_000000000018e490;
+    .scope S_0000000000e48960;
 T_2 ;
-    %wait E_00000000008ae130;
-    %load/vec4 v0000000000186860_0;
-    %pad/u 2;
-    %addi 1, 0, 2;
-    %pad/u 1;
-    %assign/vec4 v0000000000186860_0, 0;
-    %load/vec4 v00000000008addc0_0;
-    %assign/vec4 v000000000018e620_0, 0;
-    %load/vec4 v000000000018b260_0;
-    %assign/vec4 v000000000018e6c0_0, 0;
-    %load/vec4 v00000000001869a0_0;
-    %assign/vec4 v0000000000186720_0, 0;
-    %load/vec4 v0000000000186a40_0;
-    %assign/vec4 v00000000001867c0_0, 0;
+    %wait E_0000000000e470f0;
+    %load/vec4 v0000000000eb6540_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_2.0, 4;
+    %load/vec4 v0000000000f8bdd0_0;
+    %store/vec4 v0000000000e620e0_0, 0, 8;
+    %jmp T_2.1;
+T_2.0 ;
+    %load/vec4 v0000000000f8bdd0_0;
+    %store/vec4 v0000000000e61e60_0, 0, 8;
+T_2.1 ;
     %jmp T_2;
-    .thread T_2;
-    .scope S_000000000018b840;
+    .thread T_2, $push;
+    .scope S_0000000000e48960;
 T_3 ;
-    %vpi_call 4 12 "$dumpfile", "PruebademuxJOSERolo.vcd" {0 0 0};
-    %vpi_call 4 13 "$dumpvars" {0 0 0};
+    %wait E_0000000000e47430;
+    %load/vec4 v0000000000eb6540_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_3.0, 4;
+    %load/vec4 v0000000000f8be70_0;
+    %store/vec4 v0000000000f86700_0, 0, 8;
+    %jmp T_3.1;
+T_3.0 ;
+    %load/vec4 v0000000000f8be70_0;
+    %store/vec4 v0000000000e61f00_0, 0, 8;
+T_3.1 ;
+    %jmp T_3;
+    .thread T_3, $push;
+    .scope S_0000000000f867a0;
+T_4 ;
+    %vpi_call 4 19 "$dumpfile", "PruebaRecirculacionFelipeJOSERolo.vcd" {0 0 0};
+    %vpi_call 4 20 "$dumpvars" {0 0 0};
     %pushi/vec4 0, 0, 8;
-    %store/vec4 v000000000018b9d0_0, 0, 8;
+    %store/vec4 v0000000000eb6220_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0000000000eb6ea0_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0000000000eb6c20_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0000000000eb6360_0, 0, 8;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v00000000008f4e90_0, 0, 1;
+    %store/vec4 v0000000000eb6680_0, 0, 1;
     %pushi/vec4 8, 0, 32;
-T_3.0 %dup/vec4;
+T_4.0 %dup/vec4;
     %pushi/vec4 0, 0, 32;
     %cmp/s;
-    %jmp/1xz T_3.1, 5;
-    %jmp/1 T_3.1, 4;
+    %jmp/1xz T_4.1, 5;
+    %jmp/1 T_4.1, 4;
     %pushi/vec4 1, 0, 32;
     %sub;
-    %wait E_00000000008ae130;
-    %load/vec4 v000000000018b9d0_0;
+    %wait E_0000000000e46830;
+    %load/vec4 v0000000000eb6220_0;
     %addi 1, 0, 8;
-    %assign/vec4 v000000000018b9d0_0, 0;
-    %jmp T_3.0;
-T_3.1 ;
+    %assign/vec4 v0000000000eb6220_0, 0;
+    %load/vec4 v0000000000eb6ea0_0;
+    %addi 1, 0, 8;
+    %assign/vec4 v0000000000eb6ea0_0, 0;
+    %load/vec4 v0000000000eb6c20_0;
+    %addi 1, 0, 8;
+    %assign/vec4 v0000000000eb6c20_0, 0;
+    %load/vec4 v0000000000eb6360_0;
+    %addi 1, 0, 8;
+    %assign/vec4 v0000000000eb6360_0, 0;
+    %jmp T_4.0;
+T_4.1 ;
     %pop/vec4 1;
-    %wait E_00000000008ae130;
-    %pushi/vec4 0, 0, 9;
+    %wait E_0000000000e46830;
+    %pushi/vec4 0, 0, 33;
     %split/vec4 8;
-    %assign/vec4 v000000000018b9d0_0, 0;
-    %assign/vec4 v00000000008f4e90_0, 0;
-    %vpi_call 4 33 "$finish" {0 0 0};
-    %end;
-    .thread T_3;
-    .scope S_000000000018b840;
-T_4 ;
-    %pushi/vec4 0, 0, 1;
-    %assign/vec4 v0000000000186b60_0, 0;
+    %assign/vec4 v0000000000eb6360_0, 0;
+    %split/vec4 8;
+    %assign/vec4 v0000000000eb6c20_0, 0;
+    %split/vec4 8;
+    %assign/vec4 v0000000000eb6ea0_0, 0;
+    %split/vec4 8;
+    %assign/vec4 v0000000000eb6220_0, 0;
+    %assign/vec4 v0000000000eb6680_0, 0;
+    %vpi_call 4 46 "$finish" {0 0 0};
     %end;
     .thread T_4;
-    .scope S_000000000018b840;
+    .scope S_0000000000f867a0;
 T_5 ;
-    %delay 200, 0;
-    %load/vec4 v0000000000186b60_0;
-    %inv;
-    %assign/vec4 v0000000000186b60_0, 0;
-    %jmp T_5;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000000000eb6a40_0, 0;
+    %end;
     .thread T_5;
+    .scope S_0000000000f867a0;
+T_6 ;
+    %delay 200, 0;
+    %load/vec4 v0000000000eb6a40_0;
+    %inv;
+    %assign/vec4 v0000000000eb6a40_0, 0;
+    %jmp T_6;
+    .thread T_6;
 # The file index is used to find the file name in the following table.
 :file_names 5;
     "N/A";
     "<interactive>";
-    ".\BancoPruebaDemux.v";
-    "./Demux_1x2_8Bits.v";
-    "./probadorDemux.v";
+    ".\BancoPruebaRecirculacion.v";
+    "./Recirculacion.v";
+    "./probadorRecirculacion.v";
