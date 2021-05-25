@@ -21,7 +21,7 @@ module Mux2x1_8Bits(input [7:0] In0,In1, input clk, valid0, valid1, output reg o
     end  
 
     always @(posedge clk)begin
-        selector <= selector +1;
+        selector <= selector +1;       
         data_out <= ValorAnterior;
         outValid <= validTemp;
     end
