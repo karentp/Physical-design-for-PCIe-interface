@@ -53,6 +53,7 @@ module probadorMux2x18bits(
             //Mux 2x1 2 bits
             {In0} <= {In0} + 1;
             {In1} <= {In1} + 1; 
+         
         end
 
 		repeat (4) begin
@@ -89,8 +90,8 @@ module probadorMux2x18bits(
     initial	clk2 	<= 1;	
 
     //Toggle cada 2*10 nano segundos		
-	always	#4 clk 	<= ~clk;
+	always	#40 clk 	<= ~clk;
 
-    always  #2 clk2 <= ~clk2;
+    always  #20 clk2 <= ~clk2;
     		
 endmodule

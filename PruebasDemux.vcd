@@ -1,9 +1,13 @@
 $date
+<<<<<<< HEAD
 <<<<<<< HEAD:PruebademuxJOSERolo.vcd
 	Tue May 25 00:22:27 2021
 =======
 	Mon May 24 23:54:31 2021
 >>>>>>> ce0ac1fbbcd33a89be8245ceb702db26b835003c:PruebasDemux.vcd
+=======
+	Tue May 25 01:26:30 2021
+>>>>>>> 91f37affd67ce7389810ee02dfe271669993331c
 $end
 $version
 	Icarus Verilog
