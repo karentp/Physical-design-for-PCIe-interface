@@ -1,6 +1,7 @@
 `timescale 	1ns				/ 100ps
 `include "Demux_1x2_8Bits.v"
 `include "probadorDemux.v"
+`include "phy_tx_estruct.v"
 
 
 module BancoPruebaDemux; // Testbench
@@ -37,6 +38,8 @@ module BancoPruebaDemux; // Testbench
 			   .data_out1		(data_out1[7:0]),
 			   .outValid0		(outValid0),
 			   .outValid1		(outValid1));
+
+  
 
 endmodule
 
