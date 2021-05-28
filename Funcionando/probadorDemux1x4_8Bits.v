@@ -9,19 +9,19 @@ module probadorDemux1x4_8Bits(
     input [7:0]  data_out0,
     input [7:0]  data_out1,
     input [7:0]  data_out2,
-    input [7:0]  data_out3,
+    input [7:0]  data_out3
 
 
 	//estructural
 
-    input outValid0_estructural,
-    input outValid1_estructural,
-    input outValid2_estructural,
-    input outValid3_estructural,
-    input [7:0]  data_out0_estructural,
-    input [7:0]  data_out1_estructural,
-    input [7:0]  data_out2_estructural,
-    input [7:0]  data_out3_estructural
+    //input outValid0_estructural,
+    //input outValid1_estructural,
+    //input outValid2_estructural,
+    //input outValid3_estructural,
+    //input [7:0]  data_out0_estructural,
+    //input [7:0]  data_out1_estructural,
+    //input [7:0]  data_out2_estructural,
+    //input [7:0]  data_out3_estructural
 );
 
 	initial begin
@@ -34,44 +34,6 @@ module probadorDemux1x4_8Bits(
 		{validIn} = 1'b1; 
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'hFF;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'hDD;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'hEE;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'hCC;
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'hBB;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'h99;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'hAA;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'h88;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'h88;
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
-		
-		{In} <= 8'h77;
-			@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
 		{In} <= 8'hFF;
 

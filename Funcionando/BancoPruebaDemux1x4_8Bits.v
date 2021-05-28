@@ -15,18 +15,14 @@ module BancoPruebaDemux1x4_8Bits; // Testbench
 	wire		clk2;			// From prob of probadorDemux1x4_8Bits.v
 	wire		clk4;			// From prob of probadorDemux1x4_8Bits.v
 	wire [7:0]	data_out0;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
-	wire [7:0]	data_out0_estructural;	// From Demux_1x4_estructural of Demux_1x4_8Bits_estructural.v
 	wire [7:0]	data_out1;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
-	wire [7:0]	data_out1_estructural;	// From Demux_1x4_estructural of Demux_1x4_8Bits_estructural.v
 	wire [7:0]	data_out2;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
-	wire [7:0]	data_out2_estructural;	// From Demux_1x4_estructural of Demux_1x4_8Bits_estructural.v
 	wire [7:0]	data_out3;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
-	wire [7:0]	data_out3_estructural;	// From Demux_1x4_estructural of Demux_1x4_8Bits_estructural.v
 	wire		validIn;		// From prob of probadorDemux1x4_8Bits.v
-	wire		validOut0;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v, ...
-	wire		validOut1;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v, ...
-	wire		validOut2;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v, ...
-	wire		validOut3;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v, ...
+	wire		validOut0;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
+	wire		validOut1;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
+	wire		validOut2;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
+	wire		validOut3;		// From Demux_1x4_conductual of Demux_1x4_8Bits.v
 	// End of automatics
 
 	// End of automatics
@@ -50,23 +46,7 @@ module BancoPruebaDemux1x4_8Bits; // Testbench
 					 .clk			(clk),
 					 .validIn		(validIn));
 
-	Demux_1x4_8Bits_estructural Demux_1x4_estructural( /*AUTOINST*/
-							  // Outputs
-							  .data_out0_estructural(data_out0_estructural[7:0]),
-							  .data_out1_estructural(data_out1_estructural[7:0]),
-							  .data_out2_estructural(data_out2_estructural[7:0]),
-							  .data_out3_estructural(data_out3_estructural[7:0]),
-							  .validOut0		(validOut0),
-							  .validOut1		(validOut1),
-							  .validOut2		(validOut2),
-							  .validOut3		(validOut3),
-							  // Inputs
-							  .In			(In[7:0]),
-							  .clk			(clk),
-							  .clk0			(clk0),
-							  .clk2			(clk2),
-							  .clk4			(clk4),
-							  .validIn		(validIn));
+	//Demux_1x4_8Bits_estructural Demux_1x4_estructural( /*AUTOINST*/);
   
 	probadorDemux1x4_8Bits prob( /*AUTOINST*/
 				    // Outputs
@@ -84,15 +64,7 @@ module BancoPruebaDemux1x4_8Bits; // Testbench
 				    .data_out0		(data_out0[7:0]),
 				    .data_out1		(data_out1[7:0]),
 				    .data_out2		(data_out2[7:0]),
-				    .data_out3		(data_out3[7:0]),
-				    .outValid0_estructural(outValid0_estructural),
-				    .outValid1_estructural(outValid1_estructural),
-				    .outValid2_estructural(outValid2_estructural),
-				    .outValid3_estructural(outValid3_estructural),
-				    .data_out0_estructural(data_out0_estructural[7:0]),
-				    .data_out1_estructural(data_out1_estructural[7:0]),
-				    .data_out2_estructural(data_out2_estructural[7:0]),
-				    .data_out3_estructural(data_out3_estructural[7:0]));
+				    .data_out3		(data_out3[7:0]));
  
 /*
 	Mux4x1_4Bits Mux4x1Conductual( .valid(valid), .selector(selector), .data_in0(data_in0), .data_in1(data_in1), .data_in2(data_in2), .data_in3(data_in3), .data_out(data_outCond));

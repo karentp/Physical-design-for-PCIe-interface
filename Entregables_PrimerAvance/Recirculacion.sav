@@ -1,0 +1,47 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue May 25 22:53:11 2021
+[*]
+[dumpfile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/phy_tx.vcd"
+[dumpfile_mtime] "Tue May 25 22:43:54 2021"
+[dumpfile_size] 39830
+[savefile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/Recirculacion.sav"
+[timestart] 0
+[size] 1366 745
+[pos] -139 -139
+*-4.629029 5 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas_phy_tx.
+[sst_width] 192
+[signals_width] 144
+[sst_expanded] 1
+[sst_vpaned_height] 209
+@28
+BancoPruebas_phy_tx.clk
+@22
+BancoPruebas_phy_tx.In0[7:0]
+BancoPruebas_phy_tx.In1[7:0]
+BancoPruebas_phy_tx.In2[7:0]
+BancoPruebas_phy_tx.In3[7:0]
+@28
+[color] 7
+BancoPruebas_phy_tx.validIn
+@22
+[color] 2
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.In0_good[7:0]
+[color] 2
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.In1_good[7:0]
+[color] 2
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.In2_good[7:0]
+[color] 2
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.In3_good[7:0]
+@23
+[color] 6
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.data_Probador0[7:0]
+[color] 6
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.data_Probador1[7:0]
+[color] 6
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.data_Probador2[7:0]
+[color] 6
+BancoPruebas_phy_tx.phy_tx_estruct_testbench.data_Probador3[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

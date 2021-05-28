@@ -1,0 +1,129 @@
+$date
+	Tue May 25 16:55:53 2021
+$end
+$version
+	GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+$end
+$timescale
+	1 s
+$end
+$scope module BancoPruebas_phy_tx $end
+$var wire 1 ' validIn $end
+$var wire 1 " clk $end
+$var wire 8 & In3[7:0] $end
+$var wire 8 % In2[7:0] $end
+$var wire 8 $ In1[7:0] $end
+$var wire 8 # In0[7:0] $end
+$scope module phy_tx_estruct_testbench $end
+$var wire 8 , data_Probador0[7:0] $end
+$var wire 8 - data_Probador1[7:0] $end
+$var wire 8 . data_Probador2[7:0] $end
+$var wire 8 / data_Probador3[7:0] $end
+$var wire 8 + In3_good[7:0] $end
+$var wire 8 * In2_good[7:0] $end
+$var wire 8 ) In1_good[7:0] $end
+$var wire 8 ( In0_good[7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx /
+bx %
+x'
+0"
+bx $
+bx -
+bx .
+bx ,
+bx #
+bx +
+bx &
+bx )
+bx *
+$end
+#8
+b11011101 *
+b11011101 %
+b11111111 (
+b11101110 $
+1'
+1"
+b11101110 )
+b11111111 #
+b11001100 &
+b11001100 +
+#16
+0"
+#24
+1"
+b10011001 *
+b10101010 $
+b10011001 %
+b10111011 (
+b10001000 +
+b10001000 &
+b10111011 #
+b10101010 )
+#32
+0"
+#40
+1"
+b1010101 )
+b1110111 %
+b1010101 $
+b1110111 *
+b1010101 #
+b1010101 (
+b1010101 &
+b1010101 +
+#48
+0"
+#56
+1"
+#64
+0"
+#72
+1"
+b0 +
+0'
+b11101110 -
+b11001100 /
+b11101110 $
+b11011101 %
+b0 )
+b11001100 &
+b0 *
+b11011101 .
+b11111111 ,
+b0 (
+b11111111 #
+#80
+0"
+#88
+1"
+b10111011 #
+b10011001 %
+b10101010 $
+b10101010 -
+b10001000 /
+b10001000 &
+b10111011 ,
+b10011001 .
+#96
+0"
+#104
+1"
+b0 .
+b0 -
+b0 $
+b0 #
+b0 %
+b0 ,
+b0 &
+b0 /
+#112
+0"
+#120
+1"

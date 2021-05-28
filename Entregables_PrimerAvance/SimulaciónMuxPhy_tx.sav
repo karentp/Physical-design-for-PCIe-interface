@@ -1,0 +1,50 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Tue May 25 22:38:59 2021
+[*]
+[dumpfile] "/home/jomagona01/Physical-design-for-PCIe-interface/phytx.vcd"
+[dumpfile_mtime] "Tue May 25 20:40:30 2021"
+[dumpfile_size] 7905
+[savefile] "/home/jomagona01/Physical-design-for-PCIe-interface/simulacion_phyFinal.sav"
+[timestart] 0
+[size] 845 536
+[pos] -1 -1
+*-5.667902 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas_phy_tx.
+[sst_width] 233
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 122
+@28
+[color] 1
+BancoPruebas_phy_tx.clk
+[color] 1
+BancoPruebas_phy_tx.clk2
+[color] 1
+BancoPruebas_phy_tx.clk4
+@22
+[color] 3
+BancoPruebas_phy_tx.In0[7:0]
+[color] 3
+BancoPruebas_phy_tx.In1[7:0]
+[color] 3
+BancoPruebas_phy_tx.In2[7:0]
+[color] 3
+BancoPruebas_phy_tx.In3[7:0]
+@28
+BancoPruebas_phy_tx.valid0
+BancoPruebas_phy_tx.valid1
+BancoPruebas_phy_tx.valid2
+BancoPruebas_phy_tx.valid3
+[color] 2
+BancoPruebas_phy_tx.valid_out
+@22
+[color] 5
+BancoPruebas_phy_tx.phy_tx_testbench.out_temp1[7:0]
+[color] 5
+BancoPruebas_phy_tx.phy_tx_testbench.out_temp2[7:0]
+@23
+[color] 7
+BancoPruebas_phy_tx.data_out[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

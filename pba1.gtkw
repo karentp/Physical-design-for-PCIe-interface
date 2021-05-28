@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed May 26 05:51:58 2021
+[*]
+[dumpfile] "C:\Users\tovar\OneDrive\Documents\UCR\CircuitosDigitales2\Proyecto1\Physical-design-for-PCIe-interface\Pruebademux1x4_8Bits.vcd"
+[dumpfile_mtime] "Wed May 26 05:51:13 2021"
+[dumpfile_size] 9625
+[savefile] "C:\Users\tovar\OneDrive\Documents\UCR\CircuitosDigitales2\Proyecto1\Physical-design-for-PCIe-interface\pba1.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-18.038824 100000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebaDemux1x4_8Bits.
+[treeopen] BancoPruebaDemux1x4_8Bits.Demux_1x4_conductual.
+[sst_width] 197
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+BancoPruebaDemux1x4_8Bits.Demux_1x4_conductual.Demux1.clk4
+BancoPruebaDemux1x4_8Bits.Demux_1x4_conductual.Demux1.clk2
+BancoPruebaDemux1x4_8Bits.Demux_1x4_conductual.Demux1.clk
+@22
+BancoPruebaDemux1x4_8Bits.Demux_1x4_conductual.Demux1.In[7:0]
+BancoPruebaDemux1x4_8Bits.Demux_1x4_conductual.Demux1.data_out0[7:0]
+@23
+BancoPruebaDemux1x4_8Bits.Demux_1x4_conductual.Demux1.data_out1[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
