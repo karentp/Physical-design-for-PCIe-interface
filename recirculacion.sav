@@ -1,0 +1,46 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Tue May 25 22:46:51 2021
+[*]
+[dumpfile] "/home/jomagona01/Physical-design-for-PCIe-interface/PruebaRecirculacionFelipeJOSERolo.vcd"
+[dumpfile_mtime] "Tue May 25 07:22:48 2021"
+[dumpfile_size] 3366
+[savefile] "/home/jomagona01/Physical-design-for-PCIe-interface/recirculacion.sav"
+[timestart] 0
+[size] 871 536
+[pos] -1 -1
+*-17.479877 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebaRecirculacion.
+[sst_width] 233
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 122
+@22
+[color] 2
+BancoPruebaRecirculacion.In0[7:0]
+[color] 2
+BancoPruebaRecirculacion.In1[7:0]
+[color] 2
+BancoPruebaRecirculacion.In2[7:0]
+[color] 2
+BancoPruebaRecirculacion.In3[7:0]
+[color] 7
+BancoPruebaRecirculacion.data_Mux0[7:0]
+[color] 3
+BancoPruebaRecirculacion.data_Probador0[7:0]
+[color] 7
+BancoPruebaRecirculacion.data_Mux1[7:0]
+[color] 3
+BancoPruebaRecirculacion.data_Probador1[7:0]
+[color] 7
+BancoPruebaRecirculacion.data_Mux2[7:0]
+[color] 3
+BancoPruebaRecirculacion.data_Probador2[7:0]
+[color] 7
+BancoPruebaRecirculacion.data_Mux3[7:0]
+[color] 3
+BancoPruebaRecirculacion.data_Probador3[7:0]
+@29
+BancoPruebaRecirculacion.validIn
+[pattern_trace] 1
+[pattern_trace] 0

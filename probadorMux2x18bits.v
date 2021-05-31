@@ -6,7 +6,7 @@ module probadorMux2x18bits(
     //Entradas y salidas mux 2x1 de 8 bits
 
     output reg [7:0] In0,In1,
-    output reg clk, valid0, valid1, clk2,
+    output reg clk, valid0, valid1, clk2, Reset_L,
     input outValid,
     input [7:0] data_out
     
@@ -39,6 +39,7 @@ module probadorMux2x18bits(
         {In1} = 7'b0000011;
         {valid0} = 1'b1;
         {valid1} = 1'b1;
+        {Reset_L} = 1'b1;
         	
         // Repite 8 veces
 		repeat (4) begin
@@ -53,6 +54,7 @@ module probadorMux2x18bits(
             //Mux 2x1 2 bits
             {In0} <= {In0} + 1;
             {In1} <= {In1} + 1; 
+            {Reset_L} = 1'b1;
          
         end
 
@@ -67,6 +69,7 @@ module probadorMux2x18bits(
             //Mux 2x1 2 bits
             {In0} <= {In0} + 1;
             {In1} <= {In1} + 1; 
+            {Reset_L} = 1'b1;
             
         end
     
@@ -78,6 +81,7 @@ module probadorMux2x18bits(
          //Mux 2x1 8bits
         {In0} = 7'b0000000; 
         {In1} = 7'b0000000;
+        {Reset_L} = 1'b1;
         // Termina de almacenar señales
 		$finish;
 

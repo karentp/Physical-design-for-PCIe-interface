@@ -6,7 +6,7 @@
 
 // includes de archivos de verilog
 
-`include "synth_mux2x1.v"
+`include "synthprueba.v"
 `include "Mux2x1_8Bits.v"
 //`include "mux_memoria2x1_conductual.v"
 `include "probadorMux2x18bits.v"
@@ -35,7 +35,7 @@ module BancoPruebas;
 				   // Outputs
 				   .outValid		(outValid),
 				   .data_out		(data_outC[7:0]),
-				   // Inputs
+				   // Input),
 				   .In0			(In0[7:0]),
 				   .In1			(In1[7:0]),
 				   .clk			(clk),
@@ -57,10 +57,10 @@ module BancoPruebas;
 				    // .data_out		(data_out[7:0]));
 
 	Mux2x1_8Bits_synth	mux2x1estruct(/*AUTOINST*/
-				   // Outputs
+			   	// Outputs
 				   .outValid		(outValid),
 				   .data_out		(data_outE[7:0]),
-				   // Inputs
+				   // Input),
 				   .In0			(In0[7:0]),
 				   .In1			(In1[7:0]),
 				   .clk			(clk),
