@@ -1,0 +1,1174 @@
+$date
+	Sun May 30 23:27:47 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BUF $end
+$var wire 1 ! A $end
+$var wire 1 " Y $end
+$upscope $end
+$scope module BancoPruebaDemux1x4_8Bits $end
+$var wire 1 # validIn $end
+$var wire 1 $ outValid3_estructural $end
+$var wire 1 % outValid3_conductual $end
+$var wire 1 & outValid2_estructural $end
+$var wire 1 ' outValid2_conductual $end
+$var wire 1 ( outValid1_estructural $end
+$var wire 1 ) outValid1_conductual $end
+$var wire 1 * outValid0_estructural $end
+$var wire 1 + outValid0_conductual $end
+$var wire 8 , data_out3_estructural [7:0] $end
+$var wire 8 - data_out3_conductual [7:0] $end
+$var wire 8 . data_out2_estructural [7:0] $end
+$var wire 8 / data_out2_conductual [7:0] $end
+$var wire 8 0 data_out1_estructural [7:0] $end
+$var wire 8 1 data_out1_conductual [7:0] $end
+$var wire 8 2 data_out0_estructural [7:0] $end
+$var wire 8 3 data_out0_conductual [7:0] $end
+$var wire 1 4 clk4 $end
+$var wire 1 5 clk2 $end
+$var wire 1 6 clk0 $end
+$var wire 1 7 clk $end
+$var wire 8 8 In [7:0] $end
+$scope module Demux_1x4_conductual $end
+$var wire 1 # validIn $end
+$var wire 1 9 valid1Temp $end
+$var wire 1 : valid0Temp $end
+$var wire 8 ; salida1Demux1 [7:0] $end
+$var wire 8 < salida0Demux1 [7:0] $end
+$var wire 1 % outValid3_conductual $end
+$var wire 1 ' outValid2_conductual $end
+$var wire 1 ) outValid1_conductual $end
+$var wire 1 + outValid0_conductual $end
+$var wire 8 = data_out3_conductual [7:0] $end
+$var wire 8 > data_out2_conductual [7:0] $end
+$var wire 8 ? data_out1_conductual [7:0] $end
+$var wire 8 @ data_out0_conductual [7:0] $end
+$var wire 1 4 clk4 $end
+$var wire 1 5 clk2 $end
+$var wire 1 6 clk0 $end
+$var wire 1 7 clk $end
+$var wire 8 A In [7:0] $end
+$scope module Demux1 $end
+$var wire 1 # validIn $end
+$var wire 1 4 clk4 $end
+$var wire 1 5 clk2 $end
+$var wire 1 7 clk $end
+$var wire 8 B In [7:0] $end
+$var reg 8 C ValorAnterior_out1 [7:0] $end
+$var reg 8 D ValorFuturo0 [7:0] $end
+$var reg 8 E data_out0_conductual [7:0] $end
+$var reg 8 F data_out1_conductual [7:0] $end
+$var reg 1 : outValid0_conductual $end
+$var reg 1 9 outValid1_conductual $end
+$var reg 1 G selector $end
+$var reg 1 H selector2 $end
+$var reg 1 I validTemp_In $end
+$var reg 1 J validTemp_In1 $end
+$upscope $end
+$scope module Demux2 $end
+$var wire 8 K In [7:0] $end
+$var wire 1 L clk2 $end
+$var wire 1 : validIn $end
+$var wire 1 5 clk4 $end
+$var wire 1 4 clk $end
+$var reg 8 M ValorAnterior_out1 [7:0] $end
+$var reg 8 N ValorFuturo0 [7:0] $end
+$var reg 8 O data_out0_conductual [7:0] $end
+$var reg 8 P data_out1_conductual [7:0] $end
+$var reg 1 + outValid0_conductual $end
+$var reg 1 ) outValid1_conductual $end
+$var reg 1 Q selector $end
+$var reg 1 R selector2 $end
+$var reg 1 S validTemp_In $end
+$var reg 1 T validTemp_In1 $end
+$upscope $end
+$scope module Demux3 $end
+$var wire 8 U In [7:0] $end
+$var wire 1 V clk2 $end
+$var wire 1 9 validIn $end
+$var wire 1 5 clk4 $end
+$var wire 1 4 clk $end
+$var reg 8 W ValorAnterior_out1 [7:0] $end
+$var reg 8 X ValorFuturo0 [7:0] $end
+$var reg 8 Y data_out0_conductual [7:0] $end
+$var reg 8 Z data_out1_conductual [7:0] $end
+$var reg 1 ' outValid0_conductual $end
+$var reg 1 % outValid1_conductual $end
+$var reg 1 [ selector $end
+$var reg 1 \ selector2 $end
+$var reg 1 ] validTemp_In $end
+$var reg 1 ^ validTemp_In1 $end
+$upscope $end
+$upscope $end
+$scope module Demux_1x4_estructural $end
+$var wire 1 _ _0_ $end
+$var wire 1 # validIn $end
+$var wire 1 ` valid1Temp $end
+$var wire 1 a valid0Temp $end
+$var wire 8 b salida1Demux1 [7:0] $end
+$var wire 8 c salida0Demux1 [7:0] $end
+$var wire 1 $ outValid3_estructural $end
+$var wire 1 & outValid2_estructural $end
+$var wire 1 ( outValid1_estructural $end
+$var wire 1 * outValid0_estructural $end
+$var wire 8 d data_out3_estructural [7:0] $end
+$var wire 8 e data_out2_estructural [7:0] $end
+$var wire 8 f data_out1_estructural [7:0] $end
+$var wire 8 g data_out0_estructural [7:0] $end
+$var wire 1 4 clk4 $end
+$var wire 1 5 clk2 $end
+$var wire 1 6 clk0 $end
+$var wire 1 7 clk $end
+$var wire 8 h In [7:0] $end
+$scope module Demux1 $end
+$var wire 1 # validIn $end
+$var wire 1 4 clk4 $end
+$var wire 1 5 clk2 $end
+$var wire 1 7 clk $end
+$var wire 8 i In [7:0] $end
+$var reg 8 j ValorFuturo0 [7:0] $end
+$var reg 8 k data_out0_estructural [7:0] $end
+$var reg 8 l data_out1_estructural [7:0] $end
+$var reg 1 a outValid0_estructural $end
+$var reg 1 ` outValid1_estructural $end
+$var reg 1 m selector $end
+$var reg 1 n validTemp_In $end
+$var reg 1 o validTemp_In1 $end
+$upscope $end
+$scope module Demux2 $end
+$var wire 8 p In [7:0] $end
+$var wire 1 _ clk2 $end
+$var wire 1 a validIn $end
+$var wire 1 5 clk4 $end
+$var wire 1 4 clk $end
+$var reg 8 q ValorFuturo0 [7:0] $end
+$var reg 8 r data_out0_estructural [7:0] $end
+$var reg 8 s data_out1_estructural [7:0] $end
+$var reg 1 * outValid0_estructural $end
+$var reg 1 ( outValid1_estructural $end
+$var reg 1 t selector $end
+$var reg 1 u validTemp_In $end
+$var reg 1 v validTemp_In1 $end
+$upscope $end
+$scope module Demux3 $end
+$var wire 8 w In [7:0] $end
+$var wire 1 _ clk2 $end
+$var wire 1 ` validIn $end
+$var wire 1 5 clk4 $end
+$var wire 1 4 clk $end
+$var reg 8 x ValorFuturo0 [7:0] $end
+$var reg 8 y data_out0_estructural [7:0] $end
+$var reg 8 z data_out1_estructural [7:0] $end
+$var reg 1 & outValid0_estructural $end
+$var reg 1 $ outValid1_estructural $end
+$var reg 1 { selector $end
+$var reg 1 | validTemp_In $end
+$var reg 1 } validTemp_In1 $end
+$upscope $end
+$upscope $end
+$scope module prob $end
+$var wire 8 ~ data_out0_conductual [7:0] $end
+$var wire 8 !" data_out0_estructural [7:0] $end
+$var wire 8 "" data_out1_conductual [7:0] $end
+$var wire 8 #" data_out1_estructural [7:0] $end
+$var wire 8 $" data_out2_conductual [7:0] $end
+$var wire 8 %" data_out2_estructural [7:0] $end
+$var wire 8 &" data_out3_conductual [7:0] $end
+$var wire 8 '" data_out3_estructural [7:0] $end
+$var wire 1 + outValid0_conductual $end
+$var wire 1 * outValid0_estructural $end
+$var wire 1 ) outValid1_conductual $end
+$var wire 1 ( outValid1_estructural $end
+$var wire 1 ' outValid2_conductual $end
+$var wire 1 & outValid2_estructural $end
+$var wire 1 % outValid3_conductual $end
+$var wire 1 $ outValid3_estructural $end
+$var reg 8 (" In [7:0] $end
+$var reg 1 7 clk $end
+$var reg 1 6 clk0 $end
+$var reg 1 5 clk2 $end
+$var reg 1 4 clk4 $end
+$var reg 1 # validIn $end
+$upscope $end
+$upscope $end
+$scope module DFF $end
+$var wire 1 )" C $end
+$var wire 1 *" D $end
+$var reg 1 +" Q $end
+$upscope $end
+$scope module DFFSR $end
+$var wire 1 ," C $end
+$var wire 1 -" D $end
+$var wire 1 ." R $end
+$var wire 1 /" S $end
+$var reg 1 0" Q $end
+$upscope $end
+$scope module NAND $end
+$var wire 1 1" A $end
+$var wire 1 2" B $end
+$var wire 1 3" Y $end
+$upscope $end
+$scope module NOR $end
+$var wire 1 4" A $end
+$var wire 1 5" B $end
+$var wire 1 6" Y $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 7" A $end
+$var wire 1 8" Y $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+z8"
+z7"
+x6"
+z5"
+z4"
+x3"
+z2"
+z1"
+x0"
+z/"
+z."
+z-"
+z,"
+x+"
+z*"
+z)"
+bx ("
+bx '"
+bx &"
+bx %"
+bx $"
+bx #"
+bx ""
+bx !"
+bx ~
+x}
+x|
+x{
+bx z
+bx y
+bx x
+bx w
+xv
+xu
+xt
+bx s
+bx r
+bx q
+bx p
+1o
+xn
+0m
+bx l
+bx k
+bx j
+bx i
+bx h
+bx g
+bx f
+bx e
+bx d
+bx c
+bx b
+xa
+1`
+0_
+x^
+x]
+0\
+x[
+bx Z
+bx Y
+bx X
+bx W
+0V
+bx U
+xT
+xS
+0R
+xQ
+bx P
+bx O
+bx N
+bx M
+0L
+bx K
+1J
+xI
+1H
+0G
+bx F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+x:
+19
+bx 8
+17
+16
+15
+04
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+1#
+z"
+z!
+$end
+#100
+07
+#200
+0H
+1G
+1m
+b11111111 8
+b11111111 A
+b11111111 B
+b11111111 h
+b11111111 i
+b11111111 ("
+17
+14
+#300
+07
+#400
+17
+04
+05
+#500
+07
+#600
+b11011101 8
+b11011101 A
+b11011101 B
+b11011101 h
+b11011101 i
+b11011101 ("
+0m
+b11111111 j
+1n
+1I
+b11111111 D
+1H
+0G
+17
+14
+#700
+07
+#800
+1:
+1a
+1{
+1t
+1\
+1[
+1R
+1Q
+1_
+1V
+1L
+17
+04
+15
+06
+#900
+07
+#1000
+b11111111 <
+b11111111 E
+b11111111 K
+b11111111 c
+b11111111 k
+b11111111 p
+b11011101 ;
+b11011101 F
+b11011101 U
+0H
+1G
+b11011101 b
+b11011101 l
+b11011101 w
+1m
+b11101110 8
+b11101110 A
+b11101110 B
+b11101110 h
+b11101110 i
+b11101110 ("
+17
+14
+#1100
+07
+#1200
+17
+04
+05
+#1300
+07
+#1400
+b11011101 C
+b11001100 8
+b11001100 A
+b11001100 B
+b11001100 h
+b11001100 i
+b11001100 ("
+0m
+b11101110 j
+b11101110 D
+1H
+0G
+17
+14
+#1500
+07
+#1600
+1T
+1^
+1v
+1}
+1S
+b11111111 N
+0R
+0Q
+1]
+b11011101 X
+0\
+0[
+1u
+b11111111 q
+0t
+1|
+b11011101 x
+0{
+0_
+0V
+0L
+17
+04
+15
+16
+#1700
+07
+#1800
+b11101110 <
+b11101110 E
+b11101110 K
+b11101110 c
+b11101110 k
+b11101110 p
+b11001100 ;
+b11001100 F
+b11001100 U
+0H
+1G
+1)
+1%
+b11001100 b
+b11001100 l
+b11001100 w
+1m
+1(
+1$
+b10111011 8
+b10111011 A
+b10111011 B
+b10111011 h
+b10111011 i
+b10111011 ("
+17
+14
+#1900
+07
+#2000
+1+
+1'
+1*
+1&
+17
+04
+05
+#2100
+07
+#2200
+b11001100 C
+b10011001 8
+b10011001 A
+b10011001 B
+b10011001 h
+b10011001 i
+b10011001 ("
+0m
+b10111011 j
+b10111011 D
+1H
+0G
+17
+14
+#2300
+07
+#2400
+b11011101 .
+b11011101 e
+b11011101 y
+b11011101 %"
+b11111111 2
+b11111111 g
+b11111111 r
+b11111111 !"
+b11011101 /
+b11011101 >
+b11011101 Y
+b11011101 $"
+b11111111 3
+b11111111 @
+b11111111 O
+b11111111 ~
+1{
+b11001100 ,
+b11001100 d
+b11001100 z
+b11001100 '"
+1t
+b11101110 0
+b11101110 f
+b11101110 s
+b11101110 #"
+b11001100 -
+b11001100 =
+b11001100 Z
+b11001100 &"
+1\
+1[
+b11101110 1
+b11101110 ?
+b11101110 P
+b11101110 ""
+1R
+1Q
+1_
+1V
+1L
+17
+04
+15
+06
+#2500
+07
+#2600
+b10111011 <
+b10111011 E
+b10111011 K
+b10111011 c
+b10111011 k
+b10111011 p
+b10011001 ;
+b10011001 F
+b10011001 U
+0H
+1G
+b10011001 b
+b10011001 l
+b10011001 w
+1m
+b10101010 8
+b10101010 A
+b10101010 B
+b10101010 h
+b10101010 i
+b10101010 ("
+17
+14
+#2700
+07
+#2800
+17
+04
+05
+#2900
+07
+#3000
+b10011001 C
+b10001000 8
+b10001000 A
+b10001000 B
+b10001000 h
+b10001000 i
+b10001000 ("
+0m
+b10101010 j
+b10101010 D
+1H
+0G
+17
+14
+#3100
+07
+#3200
+b11101110 M
+b11001100 W
+b10111011 N
+0R
+0Q
+b10011001 X
+0\
+0[
+b10111011 q
+0t
+b10011001 x
+0{
+0_
+0V
+0L
+17
+04
+15
+16
+#3300
+07
+#3400
+b10101010 <
+b10101010 E
+b10101010 K
+b10101010 c
+b10101010 k
+b10101010 p
+b10001000 ;
+b10001000 F
+b10001000 U
+0H
+1G
+b10001000 b
+b10001000 l
+b10001000 w
+1m
+17
+14
+#3500
+07
+#3600
+17
+04
+05
+#3700
+07
+#3800
+b10001000 C
+b1110111 8
+b1110111 A
+b1110111 B
+b1110111 h
+b1110111 i
+b1110111 ("
+0m
+b10001000 j
+b10001000 D
+1H
+0G
+17
+14
+#3900
+07
+#4000
+b10011001 .
+b10011001 e
+b10011001 y
+b10011001 %"
+b10111011 2
+b10111011 g
+b10111011 r
+b10111011 !"
+b10011001 /
+b10011001 >
+b10011001 Y
+b10011001 $"
+b10111011 3
+b10111011 @
+b10111011 O
+b10111011 ~
+1{
+b10001000 ,
+b10001000 d
+b10001000 z
+b10001000 '"
+1t
+b10101010 0
+b10101010 f
+b10101010 s
+b10101010 #"
+b10001000 -
+b10001000 =
+b10001000 Z
+b10001000 &"
+1\
+1[
+b10101010 1
+b10101010 ?
+b10101010 P
+b10101010 ""
+1R
+1Q
+1_
+1V
+1L
+17
+04
+15
+06
+#4100
+07
+#4200
+b10001000 <
+b10001000 E
+b10001000 K
+b10001000 c
+b10001000 k
+b10001000 p
+b1110111 ;
+b1110111 F
+b1110111 U
+0H
+1G
+b1110111 b
+b1110111 l
+b1110111 w
+1m
+b11111111 8
+b11111111 A
+b11111111 B
+b11111111 h
+b11111111 i
+b11111111 ("
+17
+14
+#4300
+07
+#4400
+17
+04
+05
+#4500
+07
+#4600
+b1110111 C
+b11011101 8
+b11011101 A
+b11011101 B
+b11011101 h
+b11011101 i
+b11011101 ("
+0m
+b11111111 j
+b11111111 D
+1H
+0G
+17
+14
+#4700
+07
+#4800
+b10101010 M
+b10001000 W
+b10001000 N
+0R
+0Q
+b1110111 X
+0\
+0[
+b10001000 q
+0t
+b1110111 x
+0{
+0_
+0V
+0L
+17
+04
+15
+16
+#4900
+07
+#5000
+b11111111 <
+b11111111 E
+b11111111 K
+b11111111 c
+b11111111 k
+b11111111 p
+b11011101 ;
+b11011101 F
+b11011101 U
+0H
+1G
+b11011101 b
+b11011101 l
+b11011101 w
+1m
+b11101110 8
+b11101110 A
+b11101110 B
+b11101110 h
+b11101110 i
+b11101110 ("
+17
+14
+#5100
+07
+#5200
+17
+04
+05
+#5300
+07
+#5400
+b11011101 C
+b11001100 8
+b11001100 A
+b11001100 B
+b11001100 h
+b11001100 i
+b11001100 ("
+0m
+b11101110 j
+b11101110 D
+1H
+0G
+17
+14
+#5500
+07
+#5600
+b1110111 .
+b1110111 e
+b1110111 y
+b1110111 %"
+b10001000 2
+b10001000 g
+b10001000 r
+b10001000 !"
+b1110111 /
+b1110111 >
+b1110111 Y
+b1110111 $"
+b10001000 3
+b10001000 @
+b10001000 O
+b10001000 ~
+1{
+b11011101 ,
+b11011101 d
+b11011101 z
+b11011101 '"
+1t
+b11111111 0
+b11111111 f
+b11111111 s
+b11111111 #"
+b11011101 -
+b11011101 =
+b11011101 Z
+b11011101 &"
+1\
+1[
+b11111111 1
+b11111111 ?
+b11111111 P
+b11111111 ""
+1R
+1Q
+1_
+1V
+1L
+17
+04
+15
+06
+#5700
+07
+#5800
+b11101110 <
+b11101110 E
+b11101110 K
+b11101110 c
+b11101110 k
+b11101110 p
+b11001100 ;
+b11001100 F
+b11001100 U
+0H
+1G
+b11001100 b
+b11001100 l
+b11001100 w
+1m
+b10111011 8
+b10111011 A
+b10111011 B
+b10111011 h
+b10111011 i
+b10111011 ("
+17
+14
+#5900
+07
+#6000
+17
+04
+05
+#6100
+07
+#6200
+b11001100 C
+b10011001 8
+b10011001 A
+b10011001 B
+b10011001 h
+b10011001 i
+b10011001 ("
+0m
+b10111011 j
+b10111011 D
+1H
+0G
+17
+14
+#6300
+07
+#6400
+b11111111 M
+b11011101 W
+b11101110 N
+0R
+0Q
+b11001100 X
+0\
+0[
+b11101110 q
+0t
+b11001100 x
+0{
+0_
+0V
+0L
+17
+04
+15
+16
+#6500
+07
+#6600
+b10111011 <
+b10111011 E
+b10111011 K
+b10111011 c
+b10111011 k
+b10111011 p
+b10011001 ;
+b10011001 F
+b10011001 U
+0H
+1G
+b10011001 b
+b10011001 l
+b10011001 w
+1m
+b10101010 8
+b10101010 A
+b10101010 B
+b10101010 h
+b10101010 i
+b10101010 ("
+17
+14
+#6700
+07
+#6800
+17
+04
+05
+#6900
+07
+#7000
+b10011001 C
+b10001000 8
+b10001000 A
+b10001000 B
+b10001000 h
+b10001000 i
+b10001000 ("
+0m
+b10101010 j
+b10101010 D
+1H
+0G
+17
+14
+#7100
+07
+#7200
+b11001100 .
+b11001100 e
+b11001100 y
+b11001100 %"
+b11101110 2
+b11101110 g
+b11101110 r
+b11101110 !"
+b11001100 /
+b11001100 >
+b11001100 Y
+b11001100 $"
+b11101110 3
+b11101110 @
+b11101110 O
+b11101110 ~
+1{
+b10011001 ,
+b10011001 d
+b10011001 z
+b10011001 '"
+1t
+b10111011 0
+b10111011 f
+b10111011 s
+b10111011 #"
+b10011001 -
+b10011001 =
+b10011001 Z
+b10011001 &"
+1\
+1[
+b10111011 1
+b10111011 ?
+b10111011 P
+b10111011 ""
+1R
+1Q
+1_
+1V
+1L
+17
+04
+15
+06
+#7300
+07
+#7400
+b10101010 <
+b10101010 E
+b10101010 K
+b10101010 c
+b10101010 k
+b10101010 p
+b10001000 ;
+b10001000 F
+b10001000 U
+0H
+1G
+b10001000 b
+b10001000 l
+b10001000 w
+1m
+17
+14
+#7500
+07
+#7600
+17
+04
+05
+#7700
+07
+#7800
+b10001000 C
+b1110111 8
+b1110111 A
+b1110111 B
+b1110111 h
+b1110111 i
+b1110111 ("
+0m
+b10001000 j
+b10001000 D
+1H
+0G
+17
+14
+#7900
+07
+#8000
+b10111011 M
+b10011001 W
+b10101010 N
+0R
+0Q
+b10001000 X
+0\
+0[
+b10101010 q
+0t
+b10001000 x
+0{
+0_
+0V
+0L
+17
+04
+15
+16
+#8100
+07
+#8200
+b10001000 c
+b10001000 k
+b10001000 p
+b10001000 <
+b10001000 E
+b10001000 K
+b1110111 ;
+b1110111 F
+b1110111 U
+0H
+1G
+b1110111 b
+b1110111 l
+b1110111 w
+1m
+0#
+b0 8
+b0 A
+b0 B
+b0 h
+b0 i
+b0 ("
+17
+14
