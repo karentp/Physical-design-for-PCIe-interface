@@ -1,0 +1,5984 @@
+$date
+	Tue Jun  1 07:51:01 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module BUF $end
+$var wire 1 ! A $end
+$var wire 1 " Y $end
+$upscope $end
+$scope module BancoPruebasSerialParalelo $end
+$var wire 1 # valid_out_estruct $end
+$var wire 1 $ valid_out $end
+$var wire 8 % data_out_estruct [7:0] $end
+$var wire 8 & data_out [7:0] $end
+$var wire 1 ' data_in $end
+$var wire 8 ( data2send_estruct [7:0] $end
+$var wire 8 ) data2send [7:0] $end
+$var wire 1 * clk_4f $end
+$var wire 1 + clk_32f $end
+$var wire 1 , active_estruct $end
+$var wire 1 - active $end
+$scope module conductual $end
+$var wire 1 ' data_in $end
+$var wire 1 * clk_4f $end
+$var wire 1 + clk_32f $end
+$var reg 4 . BC_counter [3:0] $end
+$var reg 1 - active $end
+$var reg 1 / active_aux $end
+$var reg 3 0 cont_aux [2:0] $end
+$var reg 8 1 data2send [7:0] $end
+$var reg 8 2 data_out [7:0] $end
+$var reg 3 3 selector [2:0] $end
+$var reg 3 4 selectorprev [2:0] $end
+$var reg 1 5 temp0 $end
+$var reg 1 6 temp1 $end
+$var reg 1 7 temp2 $end
+$var reg 1 8 temp3 $end
+$var reg 1 9 temp4 $end
+$var reg 1 : temp5 $end
+$var reg 1 ; temp6 $end
+$var reg 1 < temp7 $end
+$var reg 1 = valid_aux $end
+$var reg 1 $ valid_out $end
+$upscope $end
+$scope module estructural $end
+$var wire 1 > _004_ $end
+$var wire 1 ? _006_ $end
+$var wire 1 @ _009_ $end
+$var wire 1 A _012_ $end
+$var wire 1 B _015_ $end
+$var wire 1 C _018_ $end
+$var wire 1 D _021_ $end
+$var wire 1 E _024_ $end
+$var wire 1 F _027_ $end
+$var wire 1 G _036_ $end
+$var wire 1 H _038_ $end
+$var wire 1 I _039_ $end
+$var wire 1 J _040_ $end
+$var wire 1 K _041_ $end
+$var wire 1 L _042_ $end
+$var wire 1 M _043_ $end
+$var wire 1 N _044_ $end
+$var wire 1 O active_estruct_aux $end
+$var wire 1 ' data_in $end
+$var wire 1 * clk_4f $end
+$var wire 1 + clk_32f $end
+$var wire 1 , active_estruct $end
+$var wire 1 P _046_ $end
+$var wire 1 Q _045_ $end
+$var wire 1 R _037_ $end
+$var wire 1 S _035_ $end
+$var wire 1 T _034_ $end
+$var wire 1 U _033_ $end
+$var wire 1 V _032_ $end
+$var wire 1 W _031_ $end
+$var wire 1 X _030_ $end
+$var wire 1 Y _029_ $end
+$var wire 1 Z _028_ $end
+$var wire 1 [ _026_ $end
+$var wire 1 \ _025_ $end
+$var wire 1 ] _023_ $end
+$var wire 1 ^ _022_ $end
+$var wire 1 _ _020_ $end
+$var wire 1 ` _019_ $end
+$var wire 1 a _017_ $end
+$var wire 1 b _016_ $end
+$var wire 1 c _014_ $end
+$var wire 1 d _013_ $end
+$var wire 1 e _011_ $end
+$var wire 1 f _010_ $end
+$var wire 1 g _008_ $end
+$var wire 1 h _007_ $end
+$var wire 1 i _005_ $end
+$var wire 1 j _003_ $end
+$var wire 32 k _002_ [31:0] $end
+$var wire 32 l _001_ [31:0] $end
+$var wire 3 m _000_ [2:0] $end
+$var wire 4 n BC_counter [3:0] $end
+$var reg 3 o cont_aux [2:0] $end
+$var reg 8 p data2send_estruct [7:0] $end
+$var reg 8 q data_out_estruct [7:0] $end
+$var reg 3 r selector [2:0] $end
+$var reg 3 s selectorprev [2:0] $end
+$var reg 1 t temp0 $end
+$var reg 1 u temp1 $end
+$var reg 1 v temp2 $end
+$var reg 1 w temp3 $end
+$var reg 1 x temp4 $end
+$var reg 1 y temp5 $end
+$var reg 1 z temp6 $end
+$var reg 1 { temp7 $end
+$var reg 1 | valid_aux $end
+$var reg 1 # valid_out_estruct $end
+$upscope $end
+$scope module probador $end
+$var wire 1 - active $end
+$var wire 1 , active_estruct $end
+$var wire 8 } data2send [7:0] $end
+$var wire 8 ~ data2send_estruct [7:0] $end
+$var wire 8 !" data_out [7:0] $end
+$var wire 8 "" data_out_estruct [7:0] $end
+$var wire 1 $ valid_out $end
+$var wire 1 # valid_out_estruct $end
+$var reg 1 + clk_32f $end
+$var reg 1 * clk_4f $end
+$var reg 1 ' data_in $end
+$upscope $end
+$upscope $end
+$scope module DFF $end
+$var wire 1 #" C $end
+$var wire 1 $" D $end
+$var reg 1 %" Q $end
+$upscope $end
+$scope module DFFSR $end
+$var wire 1 &" C $end
+$var wire 1 '" D $end
+$var wire 1 (" R $end
+$var wire 1 )" S $end
+$var reg 1 *" Q $end
+$upscope $end
+$scope module NAND $end
+$var wire 1 +" A $end
+$var wire 1 ," B $end
+$var wire 1 -" Y $end
+$upscope $end
+$scope module NOR $end
+$var wire 1 ." A $end
+$var wire 1 /" B $end
+$var wire 1 0" Y $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 1" A $end
+$var wire 1 2" Y $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+z2"
+z1"
+x0"
+z/"
+z."
+x-"
+z,"
+z+"
+x*"
+z)"
+z("
+z'"
+z&"
+x%"
+z$"
+z#"
+bx ""
+bx !"
+bx ~
+bx }
+0|
+x{
+xz
+xy
+xx
+xw
+xv
+xu
+xt
+b11 s
+b100 r
+bx q
+bx p
+b0 o
+b0 n
+b101 m
+b101 l
+b1 k
+0j
+1i
+1h
+1g
+1f
+1e
+1d
+1c
+1b
+0a
+0`
+1_
+1^
+1]
+1\
+1[
+1Z
+0Y
+0X
+0W
+1V
+0U
+0T
+0S
+0R
+xQ
+1P
+0O
+1N
+1M
+1L
+0K
+1J
+1I
+1H
+1G
+1F
+1E
+1D
+0C
+1B
+1A
+1@
+1?
+0>
+0=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+b11 4
+b100 3
+bx 2
+bx 1
+b0 0
+0/
+b0 .
+0-
+0,
+1+
+0*
+bx )
+bx (
+x'
+bx &
+bx %
+x$
+x#
+z"
+z!
+$end
+#2
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#4
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#6
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#8
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#10
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#12
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#14
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#16
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+0$
+0#
+1+
+1*
+#18
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#20
+0u
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+06
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+0'
+1+
+#22
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#24
+0v
+07
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1+
+#26
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#28
+0w
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+08
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#30
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#32
+0x
+09
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#34
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#36
+0y
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+0:
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#38
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#40
+0z
+0;
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#42
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#44
+0{
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+0<
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#46
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#48
+1t
+15
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+0Q
+bx0000000 (
+bx0000000 p
+bx0000000 ~
+bx0000000 )
+bx0000000 1
+bx0000000 }
+1'
+1+
+1*
+#50
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#52
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+0'
+1+
+#54
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#56
+1v
+17
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1'
+1+
+#58
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#60
+1w
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+18
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#62
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#64
+1x
+19
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#66
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#68
+1y
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1:
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#70
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#72
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+0'
+1+
+#74
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#76
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#78
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#80
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+b10111100 )
+b10111100 1
+b10111100 }
+1Q
+b10111100 (
+b10111100 p
+b10111100 ~
+1'
+1+
+1*
+#82
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#84
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+0'
+1+
+#86
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#88
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1'
+1+
+#90
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#92
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#94
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#96
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#98
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#100
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#102
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#104
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+0'
+1+
+#106
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#108
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#110
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#112
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+b10 k
+b1 n
+b1 o
+b1 .
+1'
+b1 0
+1+
+1*
+#114
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#116
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+0'
+1+
+#118
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#120
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1'
+1+
+#122
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#124
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#126
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#128
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#130
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#132
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#134
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#136
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+0'
+1+
+#138
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#140
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#142
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#144
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+b11 k
+b10 n
+b10 o
+b10 .
+1'
+b10 0
+1+
+1*
+#146
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#148
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+0'
+1+
+#150
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#152
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1'
+1+
+#154
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#156
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#158
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#160
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#162
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#164
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#166
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#168
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+0'
+1+
+#170
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#172
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#174
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#176
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+b100 k
+b11 n
+b11 o
+b11 .
+1'
+b11 0
+1+
+1*
+#178
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#180
+1u
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+16
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+1+
+#182
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#184
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1+
+#186
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#188
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#190
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#192
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#194
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#196
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#198
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#200
+1z
+1;
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#202
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#204
+1{
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1<
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#206
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#208
+b11111111 %
+b11111111 q
+b11111111 ""
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+1,
+1|
+b11111111 &
+b11111111 2
+b11111111 !"
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+b11111111 )
+b11111111 1
+b11111111 }
+b101 k
+1j
+b100 n
+b100 o
+0Q
+b11111111 (
+b11111111 p
+b11111111 ~
+1=
+1-
+b100 .
+b100 0
+1+
+1*
+#210
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#212
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+1+
+#214
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#216
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1+
+#218
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#220
+0w
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+08
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+0'
+1+
+#222
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#224
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1'
+1+
+0*
+#226
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#228
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#230
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#232
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#234
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#236
+0{
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+0<
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+0'
+1+
+#238
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#240
+b11101110 &
+b11101110 2
+b11101110 !"
+0t
+05
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b11101110 %
+b11101110 q
+b11101110 ""
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+b11101110 (
+b11101110 p
+b11101110 ~
+1#
+1$
+b11101110 )
+b11101110 1
+b11101110 }
+1+
+1*
+#242
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#244
+0u
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+06
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+1+
+#246
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#248
+0v
+07
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1+
+#250
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#252
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#254
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#256
+0x
+09
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#258
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#260
+0y
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+0:
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#262
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#264
+0z
+0;
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#266
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#268
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#270
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#272
+b0 &
+b0 2
+b0 !"
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 %
+b0 q
+b0 ""
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+b0 )
+b0 1
+b0 }
+b0 (
+b0 p
+b0 ~
+1+
+1*
+#274
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#276
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+1+
+#278
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#280
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1+
+#282
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#284
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#286
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#288
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#290
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#292
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#294
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#296
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#298
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#300
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#302
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#304
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+1+
+1*
+#306
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#308
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+1+
+#310
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#312
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1+
+#314
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#316
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#318
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#320
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#322
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#324
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#326
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#328
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#330
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#332
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#334
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#336
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+1+
+1*
+#338
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+1h
+1>
+b0 4
+0P
+b0 s
+0+
+#340
+b10 l
+b10 m
+1N
+1M
+1L
+1K
+1J
+1I
+1G
+1h
+0f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1?
+1F
+1E
+1D
+1C
+1B
+1A
+1P
+1i
+1S
+1[
+1]
+1_
+1a
+1c
+1e
+0g
+0R
+b1 r
+b1 3
+1+
+#342
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0G
+0?
+1f
+1>
+0P
+b1 s
+b1 4
+0+
+#344
+b11 l
+b11 m
+1N
+1M
+1L
+1K
+1J
+1H
+1G
+1h
+1f
+0d
+1b
+1`
+1^
+1\
+1Z
+0>
+1@
+1F
+1E
+1D
+1C
+1B
+1?
+b10 3
+1P
+1g
+1T
+1[
+1]
+1_
+1a
+1c
+0e
+1i
+0S
+b10 r
+1+
+#346
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0H
+0@
+0G
+0?
+1d
+1>
+b10 4
+0P
+b10 s
+0+
+#348
+b100 l
+b100 m
+1N
+1M
+1L
+1K
+1I
+1H
+1G
+1h
+1f
+1d
+0b
+1`
+1^
+1\
+1Z
+0>
+1A
+1F
+1E
+1D
+1C
+1@
+1?
+1P
+1e
+1U
+1[
+1]
+1_
+1a
+0c
+1g
+1i
+0T
+b11 r
+b11 3
+1+
+#350
+0N
+0F
+0M
+0E
+0L
+0D
+0K
+0C
+0I
+0A
+0H
+0@
+0G
+0?
+1b
+1>
+0P
+b11 s
+b11 4
+0+
+#352
+b101 l
+b101 m
+1N
+1M
+1L
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+0`
+1^
+1\
+1Z
+0>
+1B
+1F
+1E
+1D
+1A
+1@
+1?
+b100 3
+1P
+1c
+1V
+1[
+1]
+1_
+0a
+1e
+1g
+1i
+0U
+b100 r
+1+
+0*
+#354
+0N
+0F
+0M
+0E
+0L
+0D
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1`
+1>
+b100 4
+0P
+b100 s
+0+
+#356
+b110 l
+b110 m
+1N
+1M
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+0^
+1\
+1Z
+0>
+1C
+1F
+1E
+1B
+1A
+1@
+1?
+1P
+1a
+1W
+1[
+1]
+0_
+1c
+1e
+1g
+1i
+0V
+b101 r
+b101 3
+1+
+#358
+0N
+0F
+0M
+0E
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1^
+1>
+0P
+b101 s
+b101 4
+0+
+#360
+b111 l
+b111 m
+1N
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+0\
+1Z
+0>
+1D
+1F
+1C
+1B
+1A
+1@
+1?
+b110 3
+1P
+1_
+1X
+1[
+0]
+1a
+1c
+1e
+1g
+1i
+0W
+b110 r
+1+
+#362
+0N
+0F
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1\
+1>
+b110 4
+0P
+b110 s
+0+
+#364
+b0 m
+b1000 l
+1M
+1L
+1K
+1J
+1I
+1H
+1G
+1h
+1f
+1d
+1b
+1`
+1^
+1\
+0Z
+0>
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1P
+1]
+1Y
+0[
+1_
+1a
+1c
+1e
+1g
+1i
+0X
+b111 r
+b111 3
+1+
+#366
+0M
+0E
+0L
+0D
+0K
+0C
+0J
+0B
+0I
+0A
+0H
+0@
+0G
+0?
+1Z
+1>
+0P
+b111 s
+b111 4
+0+
+#368
+b1 m
+b1 l
+1N
+1M
+1E
+1L
+1D
+1K
+1C
+1J
+1B
+1I
+1A
+1H
+1@
+0h
+1f
+1d
+1b
+1`
+1^
+1\
+1Z
+0>
+1F
+b0 3
+1P
+0i
+0Y
+1[
+1R
+b0 r
+1+
+1*
