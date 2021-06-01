@@ -1,5 +1,7 @@
 `include "Probador_ParaleloSerial.v"
-`include "paralelo_serial.v"
+`include "ParaleloSerial.v"
+`include "ParaleloSerial_estruct.v"
+`include "cmos_cells.v"
 
 module BancoPruebasParaleloSerial;
 
@@ -7,17 +9,16 @@ module BancoPruebasParaleloSerial;
 // Beginning of automatic wires (for undeclared instantiated-module outputs)
 wire			clk32_f;		// From probador of Probador_ParaleloSerial.v
 wire			clk4_f;			// From probador of Probador_ParaleloSerial.v
-wire [7:0]		data2send;		// From paraleloS of paralelo_serial.v
 wire [7:0]		data_in;		// From probador of Probador_ParaleloSerial.v
-wire			data_out;		// From paraleloS of paralelo_serial.v
+wire			data_out;		// From conductual of ParaleloSerial.v
+wire			data_out_estruct;	// From estructural of ParaleloSerial_estruct.v
 wire			valid_in;		// From probador of Probador_ParaleloSerial.v
 // End of automatics
     
 
 
-paralelo_serial paraleloS(/*AUTOINST*/
+ParaleloSerial conductual(/*AUTOINST*/
 			  // Outputs
-			  .data2send		(data2send[7:0]),
 			  .data_out		(data_out),
 			  // Inputs
 			  .data_in		(data_in[7:0]),
@@ -32,12 +33,21 @@ Probador_ParaleloSerial probador(/*AUTOINST*/
 				 .clk32_f		(clk32_f),
 				 .valid_in		(valid_in),
 				 // Inputs
-				 .data2send		(data2send[7:0]),
-				 .data_out		(data_out));
+				 .data_out		(data_out),
+				 .data_out_estruct	(data_out_estruct));
+
+
+
+ParaleloSerial_estruct estructural(/*AUTOINST*/
+				   // Outputs
+				   .data_out_estruct	(data_out_estruct),
+				   // Inputs
+				   .clk32_f		(clk32_f),
+				   .clk4_f		(clk4_f),
+				   .data_in		(data_in[7:0]),
+				   .valid_in		(valid_in));
 
 endmodule
-
-
 // Local Variabes:
     // eval:(verilog-read-defines)
     // eval:(verilog-read-includes)

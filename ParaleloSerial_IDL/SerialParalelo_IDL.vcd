@@ -1,0 +1,1083 @@
+$date
+	Tue Jun  1 01:16:22 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module BUF $end
+$var wire 1 ! A $end
+$var wire 1 " Y $end
+$upscope $end
+$scope module BancoPruebas_ParaleloSerial_IDL $end
+$var wire 1 # clk_4f $end
+$var wire 1 $ clk_32f $end
+$var wire 1 % active $end
+$var wire 1 & IDL_estruct $end
+$var wire 1 ' IDL $end
+$scope module conductual $end
+$var wire 1 # clk_4f $end
+$var wire 1 $ clk_32f $end
+$var wire 1 % active $end
+$var reg 1 ' IDL $end
+$var reg 3 ( selector [2:0] $end
+$var reg 1 ) valid $end
+$upscope $end
+$scope module estructural $end
+$var wire 1 * _00_ $end
+$var wire 1 + _02_ $end
+$var wire 1 , _03_ $end
+$var wire 3 - _04_ [2:0] $end
+$var wire 1 . _05_ $end
+$var wire 1 / _06_ $end
+$var wire 1 0 _07_ $end
+$var wire 1 1 _08_ $end
+$var wire 1 2 _10_ $end
+$var wire 1 3 _11_ $end
+$var wire 1 4 _12_ $end
+$var wire 1 5 _13_ $end
+$var wire 1 6 _14_ $end
+$var wire 1 7 _16_ $end
+$var wire 1 8 _18_ $end
+$var wire 1 9 _19_ $end
+$var wire 1 : _32_ $end
+$var wire 1 ; _34_ $end
+$var wire 1 < _45_ $end
+$var wire 1 = _47_ $end
+$var wire 1 # clk_4f $end
+$var wire 1 $ clk_32f $end
+$var wire 1 % active $end
+$var wire 1 > _46_ $end
+$var wire 1 ? _44_ $end
+$var wire 1 @ _43_ $end
+$var wire 1 A _42_ $end
+$var wire 1 B _41_ $end
+$var wire 1 C _40_ $end
+$var wire 1 D _39_ $end
+$var wire 1 E _38_ $end
+$var wire 1 F _37_ $end
+$var wire 1 G _36_ $end
+$var wire 1 H _35_ $end
+$var wire 1 I _33_ $end
+$var wire 1 J _31_ $end
+$var wire 1 K _30_ $end
+$var wire 1 L _29_ $end
+$var wire 1 M _28_ $end
+$var wire 1 N _27_ $end
+$var wire 1 O _26_ $end
+$var wire 1 P _25_ $end
+$var wire 1 Q _24_ $end
+$var wire 1 R _23_ $end
+$var wire 1 S _22_ $end
+$var wire 1 T _21_ $end
+$var wire 1 U _20_ $end
+$var wire 1 V _17_ $end
+$var wire 1 W _15_ $end
+$var wire 32 X _09_ [31:0] $end
+$var wire 3 Y _01_ [2:0] $end
+$var reg 1 & IDL_estruct $end
+$var reg 3 Z selector [2:0] $end
+$var reg 1 [ valid $end
+$scope function _65_ $end
+$var reg 1 \ _65_ $end
+$var reg 1 ] a $end
+$var reg 8 ^ b [7:0] $end
+$var reg 8 _ s [7:0] $end
+$upscope $end
+$scope function _76_ $end
+$var reg 1 ` _76_ $end
+$var reg 1 a a $end
+$var reg 8 b b [7:0] $end
+$var reg 8 c s [7:0] $end
+$upscope $end
+$upscope $end
+$scope module probador $end
+$var wire 1 ' IDL $end
+$var wire 1 & IDL_estruct $end
+$var reg 1 % active $end
+$var reg 1 $ clk_32f $end
+$var reg 1 # clk_4f $end
+$upscope $end
+$upscope $end
+$scope module DFF $end
+$var wire 1 d C $end
+$var wire 1 e D $end
+$var reg 1 f Q $end
+$upscope $end
+$scope module DFFSR $end
+$var wire 1 g C $end
+$var wire 1 h D $end
+$var wire 1 i R $end
+$var wire 1 j S $end
+$var reg 1 k Q $end
+$upscope $end
+$scope module NAND $end
+$var wire 1 l A $end
+$var wire 1 m B $end
+$var wire 1 n Y $end
+$upscope $end
+$scope module NOR $end
+$var wire 1 o A $end
+$var wire 1 p B $end
+$var wire 1 q Y $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 r A $end
+$var wire 1 s Y $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+zs
+zr
+xq
+zp
+zo
+xn
+zm
+zl
+xk
+zj
+zi
+zh
+zg
+xf
+ze
+zd
+b10000000 c
+b11111100 b
+1a
+1`
+b10000000 _
+b10111100 ^
+1]
+1\
+x[
+b0 Z
+b1 Y
+b1 X
+xW
+xV
+xU
+xT
+1S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+1K
+1J
+1I
+1H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+1@
+1?
+1>
+x=
+x<
+x;
+x:
+x9
+x8
+17
+16
+x5
+x4
+x3
+x2
+11
+10
+1/
+1.
+b111 -
+1,
+0+
+1*
+x)
+b0 (
+x'
+x&
+0%
+1$
+0#
+z"
+z!
+$end
+#8
+0$
+#16
+0/
+00
+0I
+01
+0J
+b10 Y
+0S
+0\
+b1000000 _
+b1000000 c
+b10 X
+1L
+0K
+1A
+0@
+b1 Z
+b1 (
+1$
+#24
+0$
+#32
+1/
+10
+1I
+11
+1J
+b11 Y
+1S
+1\
+b100000 _
+b100000 c
+b10 (
+b11 X
+1M
+0L
+1B
+0A
+b10 Z
+1$
+#40
+0$
+#48
+b100 Y
+b10000 _
+b10000 c
+b100 X
+1N
+0M
+1C
+0B
+b11 Z
+b11 (
+1$
+#56
+0$
+#64
+1&
+05
+13
+1V
+19
+0W
+08
+1'
+b101 Y
+b1000 _
+b1000 c
+14
+02
+b100 (
+b101 X
+1O
+0N
+1D
+0C
+b100 Z
+0)
+0=
+0<
+0U
+1;
+1:
+1T
+0[
+1$
+1#
+#72
+0$
+#80
+b110 Y
+b100 _
+b100 c
+b110 X
+1P
+0O
+1E
+0D
+b101 Z
+b101 (
+1$
+#88
+0$
+#96
+0&
+0/
+00
+0I
+0*
+0,
+0>
+01
+0J
+0.
+0?
+0'
+b111 Y
+0S
+0\
+b10 _
+0H
+0`
+b10 c
+b110 (
+b111 X
+1Q
+0P
+1F
+0E
+b110 Z
+1$
+#104
+0$
+#112
+b0 Y
+b1 _
+b1 c
+b1000 X
+1R
+0Q
+1G
+0F
+b111 Z
+b111 (
+1$
+#120
+0$
+#128
+1&
+1/
+10
+1I
+1*
+1,
+1>
+11
+1J
+1.
+1?
+1'
+b1 Y
+1S
+1\
+b10000000 _
+1H
+1`
+b10000000 c
+b0 (
+1+
+1%
+b1 X
+0R
+1K
+0G
+1@
+b0 Z
+1$
+0#
+#136
+0$
+#144
+0&
+0/
+00
+0I
+01
+0J
+b10 Y
+0S
+0\
+b1000000 _
+b1000000 c
+0'
+b10 X
+1L
+0K
+1A
+0@
+b1 Z
+b1 (
+1$
+#152
+0$
+#160
+1&
+1/
+10
+1I
+11
+1J
+1'
+b11 Y
+1S
+1\
+b100000 _
+b100000 c
+b10 (
+b11 X
+1M
+0L
+1B
+0A
+b10 Z
+1$
+#168
+0$
+#176
+b100 Y
+b10000 _
+b10000 c
+b100 X
+1N
+0M
+1C
+0B
+b11 Z
+b11 (
+1$
+#184
+0$
+#192
+15
+03
+0V
+09
+1W
+18
+b101 Y
+b1000 _
+b1000 c
+04
+12
+b100 (
+b101 X
+1O
+0N
+1D
+0C
+b100 Z
+1=
+1<
+1U
+0;
+0:
+0T
+1[
+1)
+1$
+1#
+#200
+0$
+#208
+b110 Y
+b100 _
+b100 c
+b110 X
+1P
+0O
+1E
+0D
+b101 Z
+b101 (
+1$
+#216
+0$
+#224
+0&
+0/
+00
+0I
+0*
+0,
+0>
+01
+0J
+0.
+0?
+0'
+b111 Y
+0S
+0\
+b10 _
+0H
+0`
+b10 c
+b110 (
+b111 X
+1Q
+0P
+1F
+0E
+b110 Z
+1$
+#232
+0$
+#240
+b0 Y
+b1 _
+b1 c
+b1000 X
+1R
+0Q
+1G
+0F
+b111 Z
+b111 (
+1$
+#248
+0$
+#256
+1&
+1/
+10
+1I
+1*
+1,
+1>
+11
+1J
+1.
+1?
+1'
+b1 Y
+1S
+1\
+b10000000 _
+1H
+1`
+b10000000 c
+b0 (
+0+
+0%
+b1 X
+0R
+1K
+0G
+1@
+b0 Z
+1$
+0#
+#264
+0$
+#272
+0/
+00
+0I
+01
+0J
+b10 Y
+0S
+0\
+b1000000 _
+b1000000 c
+b10 X
+1L
+0K
+1A
+0@
+b1 Z
+b1 (
+1$
+#280
+0$
+#288
+1/
+10
+1I
+11
+1J
+b11 Y
+1S
+1\
+b100000 _
+b100000 c
+b10 (
+b11 X
+1M
+0L
+1B
+0A
+b10 Z
+1$
+#296
+0$
+#304
+b100 Y
+b10000 _
+b10000 c
+b100 X
+1N
+0M
+1C
+0B
+b11 Z
+b11 (
+1$
+#312
+0$
+#320
+05
+13
+1V
+19
+0W
+08
+b101 Y
+b1000 _
+b1000 c
+14
+02
+b100 (
+b101 X
+1O
+0N
+1D
+0C
+b100 Z
+0)
+0=
+0<
+0U
+1;
+1:
+1T
+0[
+1$
+1#
+#328
+0$
+#336
+b110 Y
+b100 _
+b100 c
+b110 X
+1P
+0O
+1E
+0D
+b101 Z
+b101 (
+1$
+#344
+0$
+#352
+0&
+0/
+00
+0I
+0*
+0,
+0>
+01
+0J
+0.
+0?
+0'
+b111 Y
+0S
+0\
+b10 _
+0H
+0`
+b10 c
+b110 (
+b111 X
+1Q
+0P
+1F
+0E
+b110 Z
+1$
+#360
+0$
+#368
+b0 Y
+b1 _
+b1 c
+b1000 X
+1R
+0Q
+1G
+0F
+b111 Z
+b111 (
+1$
+#376
+0$
+#384
+1&
+1/
+10
+1I
+1*
+1,
+1>
+11
+1J
+1.
+1?
+1'
+b1 Y
+1S
+1\
+b10000000 _
+1H
+1`
+b10000000 c
+b0 (
+1+
+1%
+b1 X
+0R
+1K
+0G
+1@
+b0 Z
+1$
+0#
+#392
+0$
+#400
+0&
+0/
+00
+0I
+01
+0J
+b10 Y
+0S
+0\
+b1000000 _
+b1000000 c
+0'
+b10 X
+1L
+0K
+1A
+0@
+b1 Z
+b1 (
+1$
+#408
+0$
+#416
+1&
+1/
+10
+1I
+11
+1J
+1'
+b11 Y
+1S
+1\
+b100000 _
+b100000 c
+b10 (
+b11 X
+1M
+0L
+1B
+0A
+b10 Z
+1$
+#424
+0$
+#432
+b100 Y
+b10000 _
+b10000 c
+b100 X
+1N
+0M
+1C
+0B
+b11 Z
+b11 (
+1$
+#440
+0$
+#448
+15
+03
+0V
+09
+1W
+18
+b101 Y
+b1000 _
+b1000 c
+04
+12
+b100 (
+b101 X
+1O
+0N
+1D
+0C
+b100 Z
+1=
+1<
+1U
+0;
+0:
+0T
+1[
+1)
+1$
+1#
+#456
+0$
+#464
+b110 Y
+b100 _
+b100 c
+b110 X
+1P
+0O
+1E
+0D
+b101 Z
+b101 (
+1$
+#472
+0$
+#480
+0&
+0/
+00
+0I
+0*
+0,
+0>
+01
+0J
+0.
+0?
+0'
+b111 Y
+0S
+0\
+b10 _
+0H
+0`
+b10 c
+b110 (
+b111 X
+1Q
+0P
+1F
+0E
+b110 Z
+1$
+#488
+0$
+#496
+b0 Y
+b1 _
+b1 c
+b1000 X
+1R
+0Q
+1G
+0F
+b111 Z
+b111 (
+1$
+#504
+0$
+#512
+1&
+1/
+10
+1I
+1*
+1,
+1>
+11
+1J
+1.
+1?
+1'
+b1 Y
+1S
+1\
+b10000000 _
+1H
+1`
+b10000000 c
+b0 (
+0+
+0%
+b1 X
+0R
+1K
+0G
+1@
+b0 Z
+1$
+0#
+#520
+0$
+#528
+0/
+00
+0I
+01
+0J
+b10 Y
+0S
+0\
+b1000000 _
+b1000000 c
+b10 X
+1L
+0K
+1A
+0@
+b1 Z
+b1 (
+1$
+#536
+0$
+#544
+1/
+10
+1I
+11
+1J
+b11 Y
+1S
+1\
+b100000 _
+b100000 c
+b10 (
+b11 X
+1M
+0L
+1B
+0A
+b10 Z
+1$
+#552
+0$
+#560
+b100 Y
+b10000 _
+b10000 c
+b100 X
+1N
+0M
+1C
+0B
+b11 Z
+b11 (
+1$
+#568
+0$
+#576
+05
+13
+1V
+19
+0W
+08
+b101 Y
+b1000 _
+b1000 c
+14
+02
+b100 (
+b101 X
+1O
+0N
+1D
+0C
+b100 Z
+0)
+0=
+0<
+0U
+1;
+1:
+1T
+0[
+1$
+1#
+#584
+0$
+#592
+b110 Y
+b100 _
+b100 c
+b110 X
+1P
+0O
+1E
+0D
+b101 Z
+b101 (
+1$
+#600
+0$
+#608
+0&
+0/
+00
+0I
+0*
+0,
+0>
+01
+0J
+0.
+0?
+0'
+b111 Y
+0S
+0\
+b10 _
+0H
+0`
+b10 c
+b110 (
+b111 X
+1Q
+0P
+1F
+0E
+b110 Z
+1$
+#616
+0$
+#624
+b0 Y
+b1 _
+b1 c
+b1000 X
+1R
+0Q
+1G
+0F
+b111 Z
+b111 (
+1$

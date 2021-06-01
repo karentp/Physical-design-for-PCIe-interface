@@ -1,7 +1,14 @@
-all: autoinst execute sim gtkwave
+all: sintesis autoinst execute sim gtkwave
 
 sintesis:
-	
+	yosys -s ParaleloSerial.ys
+
+	sed -i 's/ParaleloSerial/ParaleloSerial_estruct/' ./ParaleloSerial_estruct.v
+
+	sed -i 's/data_out/data_out_estruct/' ./ParaleloSerial_estruct.v
+	# sed -i 's/phy_tx/phy_tx_estruct/' ./phy_tx_estruct.v
+	# sed -i 's/data_out_conductual/data_out_estruct/' ./phy_tx_estruct.v
+	# sed -i 's/valid_out_conductual/valid_out_estruct/' ./phy_tx_estruct.v
 
 autoinst:
 	emacs --batch  BancoPruebas_ParaleloSerial.v  -f verilog-batch-delete-auto
