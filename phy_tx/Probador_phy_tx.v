@@ -7,7 +7,12 @@ module Probador_phy_tx(
     output reg clk2,
     output reg clk4,
     output reg valid0, valid1, valid2, valid3,
+<<<<<<< HEAD:Probador_phy_tx.v
     input [7:0] data_out,
+=======
+    input [7:0] data_out_estruct,
+    input [7:0] data_out_conductual,
+>>>>>>> 52ea325d6c1af3636a4c6e72eb69156ba71f3a17:phy_tx/Probador_phy_tx.v
 
     ///// Reciclación
 
@@ -15,7 +20,12 @@ module Probador_phy_tx(
     input [7:0] data_Probador1,
     input [7:0] data_Probador2,
     input [7:0] data_Probador3,
+<<<<<<< HEAD:Probador_phy_tx.v
     input valid_out,
+=======
+    input valid_out_estruct,
+    input valid_out_conductual,
+>>>>>>> 52ea325d6c1af3636a4c6e72eb69156ba71f3a17:phy_tx/Probador_phy_tx.v
     output reg validIn 
 );
 

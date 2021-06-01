@@ -1,0 +1,16 @@
+
+read_verilog Demux_1x4_8Bits.v Demux_1x2_8Bits.v;
+
+hierarchy -check -top Demux_1x4_8Bits;
+
+proc; opt; fsm; opt; memory; opt
+
+techmap -map test_map.v; opt;
+
+dfflibmap -liberty cmos_cells.lib;
+
+abc -liberty cmos_cells.lib;
+
+clean;
+
+write_verilog Demux_1x4_8Bits_estructural.v;

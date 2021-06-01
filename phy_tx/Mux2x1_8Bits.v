@@ -1,3 +1,8 @@
+<<<<<<< HEAD:Mux2x1_8Bits.v
+=======
+// Multiplexor 2X1 de 8 bits 
+
+>>>>>>> 52ea325d6c1af3636a4c6e72eb69156ba71f3a17:phy_tx/Mux2x1_8Bits.v
 module Mux2x1_8Bits(
     input [7:0] In0,In1,
     input clk, valid0, valid1,
@@ -9,6 +14,7 @@ module Mux2x1_8Bits(
     reg  validTemp;
     reg selector=0;
 
+<<<<<<< HEAD:Mux2x1_8Bits.v
    /* initial begin
         selector = 0;
         validTemp = 0;
@@ -17,6 +23,9 @@ module Mux2x1_8Bits(
 
     always @(*)begin
         //selector = 0;
+=======
+    always @(*)begin
+>>>>>>> 52ea325d6c1af3636a4c6e72eb69156ba71f3a17:phy_tx/Mux2x1_8Bits.v
         validTemp = 0;
         ValorAnterior = data_out;
 
@@ -36,7 +45,10 @@ module Mux2x1_8Bits(
     end  
 
     always @(posedge clk)begin
+<<<<<<< HEAD:Mux2x1_8Bits.v
         //selector <= 0;
+=======
+>>>>>>> 52ea325d6c1af3636a4c6e72eb69156ba71f3a17:phy_tx/Mux2x1_8Bits.v
         selector <= selector + 1;
         data_out <= ValorAnterior;
         outValid <= validTemp;
