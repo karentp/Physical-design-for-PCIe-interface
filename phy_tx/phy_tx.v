@@ -7,13 +7,13 @@ module phy_tx(
     input [7:0] In2,
     input [7:0] In3,
     input clk,
-    input clk2,
-    input clk4,
+    input clk_2f,
+    input clk_4f,
     input valid0, valid1, valid2, valid3,
     input validIn, 
     input reset,
-    output [7:0] data_out_conductual,
-    output valid_out_conductual,
+    output [7:0] data_PSA_conductual,
+    output valid_PSA_conductual,
 
     ///// AL PROBADOR (recirculación)
     output [7:0] data_Probador0,
@@ -63,7 +63,7 @@ Recirculacion Recirculacion_testbench (
 Mux2x1_8Bits MUX2x1_1 (
     .In0(In1_good),
     .In1(In0_good),
-    .clk(clk2),
+    .clk(clk_2f),
     .reset(reset),
     .valid0(valid1),
     .valid1(valid0),
@@ -74,7 +74,7 @@ Mux2x1_8Bits MUX2x1_1 (
 Mux2x1_8Bits MUX2x1_2 (
     .In0(In3_good),
     .In1(In2_good),
-    .clk(clk2),
+    .clk(clk_2f),
     .reset(reset),
     .valid0(valid3),
     .valid1(valid2),
@@ -90,12 +90,12 @@ Mux2x1_8Bits MUX2x1_2 (
 Mux2x1_8Bits MUX2x1_3 (
     .In0(out_temp2),
     .In1(out_temp1),
-    .clk(clk4),
+    .clk(clk_4f),
     .reset(reset),
     .valid0(valid_out_2),
     .valid1(valid_out_1),
-    .data_out(data_out_conductual),
-    .outValid(valid_out_conductual)
+    .data_out(data_PSA_conductual),
+    .outValid(valid_PSA_conductual)
 ); 
 
 

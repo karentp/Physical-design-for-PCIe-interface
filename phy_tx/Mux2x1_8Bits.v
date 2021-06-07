@@ -13,6 +13,10 @@ module Mux2x1_8Bits(
     reg selector;
 
     always @(*)begin
+    if(reset == 1)begin
+            validTemp = 0;
+        end
+        else begin
         validTemp = 0;
         ValorAnterior = data_out;
 
@@ -28,6 +32,7 @@ module Mux2x1_8Bits(
         else begin
             validTemp = 0;
             ValorAnterior = ValorAnterior;
+        end
         end
         
     end  
