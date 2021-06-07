@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Jun  5 02:15:43 2021
+[*]
+[dumpfile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/ParaleloSerial-verde/ParaleloSerial_verde.vcd"
+[dumpfile_mtime] "Sat Jun  5 02:13:42 2021"
+[dumpfile_size] 8727
+[savefile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/ParaleloSerial-verde/ParaleloSerial_verde.gtkw"
+[timestart] 0
+[size] 1366 745
+[pos] -191 -177
+*-5.689479 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 192
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 209
+@28
+[color] 1
+BancoPruebasParaleloSerial_verde.clk4_f
+[color] 2
+BancoPruebasParaleloSerial_verde.clk32_f
+[color] 3
+BancoPruebasParaleloSerial_verde.valid_in
+[color] 5
+BancoPruebasParaleloSerial_verde.data_out
+@29
+[color] 6
+BancoPruebasParaleloSerial_verde.data_out_estruct
+[pattern_trace] 1
+[pattern_trace] 0

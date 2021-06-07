@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Jun  5 00:54:27 2021
+[*]
+[dumpfile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/SerialParalelo-verde/SerialParalelo_verde.vcd"
+[dumpfile_mtime] "Sat Jun  5 00:51:04 2021"
+[dumpfile_size] 40690
+[savefile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/SerialParalelo-verde/SerialParalelo_verde.gtkw"
+[timestart] 0
+[size] 1366 745
+[pos] -87 -87
+*-6.547537 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 192
+[signals_width] 180
+[sst_expanded] 1
+[sst_vpaned_height] 209
+@28
+[color] 1
+BancoPruebasSerialParalelo_verde.clk_4f
+[color] 2
+BancoPruebasSerialParalelo_verde.clk_32f
+BancoPruebasSerialParalelo_verde.data_in
+@22
+[color] 5
+BancoPruebasSerialParalelo_verde.data2send[7:0]
+[color] 5
+BancoPruebasSerialParalelo_verde.data2send_estruct[7:0]
+@28
+[color] 7
+BancoPruebasSerialParalelo_verde.active
+[color] 7
+BancoPruebasSerialParalelo_verde.active_estruct
+@29
+[color] 6
+BancoPruebasSerialParalelo_verde.valid_out
+[color] 6
+BancoPruebasSerialParalelo_verde.valid_out_estruct
+[pattern_trace] 1
+[pattern_trace] 0

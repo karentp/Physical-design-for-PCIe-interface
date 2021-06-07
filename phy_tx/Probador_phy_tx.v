@@ -6,6 +6,7 @@ module Probador_phy_tx(
     output reg clk,
     output reg clk2,
     output reg clk4,
+    output reg reset,
     output reg valid0, valid1, valid2, valid3,
     input [7:0] data_out_estruct,
     input [7:0] data_out_conductual,
@@ -27,6 +28,13 @@ initial begin
 
         // Directiva para "dumpear" variables	
 		$dumpvars;	
+
+        reset = 0;
+        reset = 1;
+        @(posedge clk)
+        @(posedge clk2)
+        @(posedge clk4)
+        reset = 0;
 
         //Mux 2x1 8bits
         @(posedge clk);

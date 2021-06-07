@@ -1,16 +1,26 @@
+# ARCHIVO DE SÍNTESIS
 
-read_verilog Demux_1x4_8Bits.v Demux_1x2_8Bits.v;
+# Read design
+read_verilog Demux_1x4_8Bits.v
+hierarchy -check -top Demux_1x4_8Bits
 
-hierarchy -check -top Demux_1x4_8Bits;
-
+# The high-level stuff
 proc; opt; fsm; opt; memory; opt
 
-techmap -map test_map.v; opt;
+# Mapping to internal cell library
+techmap; opt
 
-dfflibmap -liberty cmos_cells.lib;
+# Mapping flip-flop to mycells.lib
+dfflibmap -liberty cmos_cells.lib
 
-abc -liberty cmos_cells.lib;
+# Mapping logic to mycells.lib
+abc -liberty cmos_cells.lib
 
-clean;
+# Despliega Diagrama de bloques
+# show -prefix Demux_1x4_8Bits -lib cmos_cells.v
 
-write_verilog Demux_1x4_8Bits_estructural.v;
+# Cleaning
+clean
+
+# Write synthesized design
+write_verilog Demux_1x4_8Bits_estructural.v

@@ -21,6 +21,7 @@ wire [7:0]		data_Probador2;		// From conductual of phy_tx.v, ...
 wire [7:0]		data_Probador3;		// From conductual of phy_tx.v, ...
 wire [7:0]		data_out_conductual;	// From conductual of phy_tx.v
 wire [7:0]		data_out_estruct;	// From estructural of phy_tx_estruct.v
+wire			reset;			// From Probador_phy_tx_testbench of Probador_phy_tx.v
 wire			valid0;			// From Probador_phy_tx_testbench of Probador_phy_tx.v
 wire			valid1;			// From Probador_phy_tx_testbench of Probador_phy_tx.v
 wire			valid2;			// From Probador_phy_tx_testbench of Probador_phy_tx.v
@@ -50,7 +51,8 @@ phy_tx conductual(/*AUTOINST*/
 		  .valid1		(valid1),
 		  .valid2		(valid2),
 		  .valid3		(valid3),
-		  .validIn		(validIn));
+		  .validIn		(validIn),
+		  .reset		(reset));
 
 Probador_phy_tx Probador_phy_tx_testbench(/*AUTOINST*/
 					  // Outputs
@@ -61,6 +63,7 @@ Probador_phy_tx Probador_phy_tx_testbench(/*AUTOINST*/
 					  .clk			(clk),
 					  .clk2			(clk2),
 					  .clk4			(clk4),
+					  .reset		(reset),
 					  .valid0		(valid0),
 					  .valid1		(valid1),
 					  .valid2		(valid2),
@@ -95,6 +98,7 @@ phy_tx_estruct estructural(
 			   .clk			(clk),
 			   .clk2		(clk2),
 			   .clk4		(clk4),
+			   .reset		(reset),
 			   .valid0		(valid0),
 			   .valid1		(valid1),
 			   .valid2		(valid2),

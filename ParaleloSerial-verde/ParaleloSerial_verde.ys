@@ -1,8 +1,9 @@
+
 # ARCHIVO DE SÍNTESIS
 
 # Read design
-read_verilog Recirculacion.v
-hierarchy -check -top Recirculacion
+read_verilog ParaleloSerial_verde.v
+hierarchy -check -top ParaleloSerial_verde
 
 # The high-level stuff
 proc; opt; fsm; opt; memory; opt
@@ -17,10 +18,10 @@ dfflibmap -liberty cmos_cells.lib
 abc -liberty cmos_cells.lib
 
 # Despliega Diagrama de bloques
-# show -prefix Recirculacion -lib cmos_cells.v
+# show -prefix ParaleloSerial_verde -lib cmos_cells.v
 
 # Cleaning
 clean
 
 # Write synthesized design
-write_verilog Recirculacion_estruct.v
+write_verilog ParaleloSerial_verde_estruct.v

@@ -3,6 +3,70 @@
 (* top =  1  *)
 (* src = "Recirculacion_estruct.v:1.1-75.10" *)
 module Recirculacion_estruct(In0, In1, In2, In3, validIn, data_mux0, data_Probador0, data_mux1, data_Probador1, data_mux2, data_Probador2, data_mux3, data_Probador3);
+  wire _000_;
+  wire _001_;
+  wire _002_;
+  wire _003_;
+  wire _004_;
+  wire _005_;
+  wire _006_;
+  wire _007_;
+  wire _008_;
+  wire _009_;
+  wire _010_;
+  wire _011_;
+  wire _012_;
+  wire _013_;
+  wire _014_;
+  wire _015_;
+  wire _016_;
+  wire _017_;
+  wire _018_;
+  wire _019_;
+  wire _020_;
+  wire _021_;
+  wire _022_;
+  wire _023_;
+  wire _024_;
+  wire _025_;
+  wire _026_;
+  wire _027_;
+  wire _028_;
+  wire _029_;
+  wire _030_;
+  wire _031_;
+  wire _032_;
+  wire _033_;
+  wire _034_;
+  wire _035_;
+  wire _036_;
+  wire _037_;
+  wire _038_;
+  wire _039_;
+  wire _040_;
+  wire _041_;
+  wire _042_;
+  wire _043_;
+  wire _044_;
+  wire _045_;
+  wire _046_;
+  wire _047_;
+  wire _048_;
+  wire _049_;
+  wire _050_;
+  wire _051_;
+  wire _052_;
+  wire _053_;
+  wire _054_;
+  wire _055_;
+  wire _056_;
+  wire _057_;
+  wire _058_;
+  wire _059_;
+  wire _060_;
+  wire _061_;
+  wire _062_;
+  wire _063_;
   (* src = "Recirculacion_estruct.v:2.17-2.20" *)
   input [7:0] In0;
   (* src = "Recirculacion_estruct.v:2.22-2.25" *)
@@ -29,12 +93,580 @@ module Recirculacion_estruct(In0, In1, In2, In3, validIn, data_mux0, data_Probad
   output [7:0] data_mux3;
   (* src = "Recirculacion_estruct.v:3.11-3.18" *)
   input validIn;
-  assign data_mux3 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:64.12-64.24|Recirculacion.v:64.9-71.12" *) In3 : 8'h00;
-  assign data_Probador3 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:64.12-64.24|Recirculacion.v:64.9-71.12" *) 8'h00 : In3;
-  assign data_mux2 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:49.12-49.24|Recirculacion.v:49.9-56.12" *) In2 : 8'h00;
-  assign data_Probador2 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:49.12-49.24|Recirculacion.v:49.9-56.12" *) 8'h00 : In2;
-  assign data_mux1 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:34.12-34.24|Recirculacion.v:34.9-41.12" *) In1 : 8'h00;
-  assign data_Probador1 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:34.12-34.24|Recirculacion.v:34.9-41.12" *) 8'h00 : In1;
-  assign data_mux0 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:19.12-19.24|Recirculacion.v:19.9-26.12" *) In0 : 8'h00;
-  assign data_Probador0 = validIn ? (* full_case = 32'd1 *) (* src = "Recirculacion_estruct.v:19.12-19.24|Recirculacion.v:19.9-26.12" *) 8'h00 : In0;
+  NOT _064_ (
+    .A(In3[0]),
+    .Y(_062_)
+  );
+  NOT _065_ (
+    .A(In3[1]),
+    .Y(_063_)
+  );
+  NOT _066_ (
+    .A(In3[2]),
+    .Y(_000_)
+  );
+  NOT _067_ (
+    .A(In3[3]),
+    .Y(_001_)
+  );
+  NOT _068_ (
+    .A(In3[4]),
+    .Y(_002_)
+  );
+  NOT _069_ (
+    .A(In3[5]),
+    .Y(_003_)
+  );
+  NOT _070_ (
+    .A(In3[6]),
+    .Y(_004_)
+  );
+  NOT _071_ (
+    .A(In3[7]),
+    .Y(_005_)
+  );
+  NOT _072_ (
+    .A(In2[0]),
+    .Y(_006_)
+  );
+  NOT _073_ (
+    .A(In2[1]),
+    .Y(_007_)
+  );
+  NOT _074_ (
+    .A(In2[2]),
+    .Y(_008_)
+  );
+  NOT _075_ (
+    .A(In2[3]),
+    .Y(_009_)
+  );
+  NOT _076_ (
+    .A(In2[4]),
+    .Y(_010_)
+  );
+  NOT _077_ (
+    .A(In2[5]),
+    .Y(_011_)
+  );
+  NOT _078_ (
+    .A(In2[6]),
+    .Y(_012_)
+  );
+  NOT _079_ (
+    .A(In2[7]),
+    .Y(_013_)
+  );
+  NOT _080_ (
+    .A(In1[0]),
+    .Y(_014_)
+  );
+  NOT _081_ (
+    .A(In1[1]),
+    .Y(_015_)
+  );
+  NOT _082_ (
+    .A(In1[2]),
+    .Y(_016_)
+  );
+  NOT _083_ (
+    .A(In1[3]),
+    .Y(_017_)
+  );
+  NOT _084_ (
+    .A(In1[4]),
+    .Y(_018_)
+  );
+  NOT _085_ (
+    .A(In1[5]),
+    .Y(_019_)
+  );
+  NOT _086_ (
+    .A(In1[6]),
+    .Y(_020_)
+  );
+  NOT _087_ (
+    .A(In1[7]),
+    .Y(_021_)
+  );
+  NOT _088_ (
+    .A(In0[0]),
+    .Y(_022_)
+  );
+  NOT _089_ (
+    .A(In0[1]),
+    .Y(_023_)
+  );
+  NOT _090_ (
+    .A(In0[2]),
+    .Y(_024_)
+  );
+  NOT _091_ (
+    .A(In0[3]),
+    .Y(_025_)
+  );
+  NOT _092_ (
+    .A(In0[4]),
+    .Y(_026_)
+  );
+  NOT _093_ (
+    .A(In0[5]),
+    .Y(_027_)
+  );
+  NOT _094_ (
+    .A(In0[6]),
+    .Y(_028_)
+  );
+  NOT _095_ (
+    .A(In0[7]),
+    .Y(_029_)
+  );
+  NAND _096_ (
+    .A(In3[0]),
+    .B(validIn),
+    .Y(_030_)
+  );
+  NOT _097_ (
+    .A(_030_),
+    .Y(data_mux3[0])
+  );
+  NAND _098_ (
+    .A(validIn),
+    .B(In3[1]),
+    .Y(_031_)
+  );
+  NOT _099_ (
+    .A(_031_),
+    .Y(data_mux3[1])
+  );
+  NAND _100_ (
+    .A(validIn),
+    .B(In3[2]),
+    .Y(_032_)
+  );
+  NOT _101_ (
+    .A(_032_),
+    .Y(data_mux3[2])
+  );
+  NAND _102_ (
+    .A(validIn),
+    .B(In3[3]),
+    .Y(_033_)
+  );
+  NOT _103_ (
+    .A(_033_),
+    .Y(data_mux3[3])
+  );
+  NAND _104_ (
+    .A(validIn),
+    .B(In3[4]),
+    .Y(_034_)
+  );
+  NOT _105_ (
+    .A(_034_),
+    .Y(data_mux3[4])
+  );
+  NAND _106_ (
+    .A(validIn),
+    .B(In3[5]),
+    .Y(_035_)
+  );
+  NOT _107_ (
+    .A(_035_),
+    .Y(data_mux3[5])
+  );
+  NAND _108_ (
+    .A(validIn),
+    .B(In3[6]),
+    .Y(_036_)
+  );
+  NOT _109_ (
+    .A(_036_),
+    .Y(data_mux3[6])
+  );
+  NAND _110_ (
+    .A(validIn),
+    .B(In3[7]),
+    .Y(_037_)
+  );
+  NOT _111_ (
+    .A(_037_),
+    .Y(data_mux3[7])
+  );
+  NOR _112_ (
+    .A(_062_),
+    .B(validIn),
+    .Y(data_Probador3[0])
+  );
+  NOR _113_ (
+    .A(validIn),
+    .B(_063_),
+    .Y(data_Probador3[1])
+  );
+  NOR _114_ (
+    .A(validIn),
+    .B(_000_),
+    .Y(data_Probador3[2])
+  );
+  NOR _115_ (
+    .A(validIn),
+    .B(_001_),
+    .Y(data_Probador3[3])
+  );
+  NOR _116_ (
+    .A(validIn),
+    .B(_002_),
+    .Y(data_Probador3[4])
+  );
+  NOR _117_ (
+    .A(validIn),
+    .B(_003_),
+    .Y(data_Probador3[5])
+  );
+  NOR _118_ (
+    .A(validIn),
+    .B(_004_),
+    .Y(data_Probador3[6])
+  );
+  NOR _119_ (
+    .A(validIn),
+    .B(_005_),
+    .Y(data_Probador3[7])
+  );
+  NAND _120_ (
+    .A(validIn),
+    .B(In2[0]),
+    .Y(_038_)
+  );
+  NOT _121_ (
+    .A(_038_),
+    .Y(data_mux2[0])
+  );
+  NAND _122_ (
+    .A(validIn),
+    .B(In2[1]),
+    .Y(_039_)
+  );
+  NOT _123_ (
+    .A(_039_),
+    .Y(data_mux2[1])
+  );
+  NAND _124_ (
+    .A(validIn),
+    .B(In2[2]),
+    .Y(_040_)
+  );
+  NOT _125_ (
+    .A(_040_),
+    .Y(data_mux2[2])
+  );
+  NAND _126_ (
+    .A(validIn),
+    .B(In2[3]),
+    .Y(_041_)
+  );
+  NOT _127_ (
+    .A(_041_),
+    .Y(data_mux2[3])
+  );
+  NAND _128_ (
+    .A(validIn),
+    .B(In2[4]),
+    .Y(_042_)
+  );
+  NOT _129_ (
+    .A(_042_),
+    .Y(data_mux2[4])
+  );
+  NAND _130_ (
+    .A(validIn),
+    .B(In2[5]),
+    .Y(_043_)
+  );
+  NOT _131_ (
+    .A(_043_),
+    .Y(data_mux2[5])
+  );
+  NAND _132_ (
+    .A(validIn),
+    .B(In2[6]),
+    .Y(_044_)
+  );
+  NOT _133_ (
+    .A(_044_),
+    .Y(data_mux2[6])
+  );
+  NAND _134_ (
+    .A(validIn),
+    .B(In2[7]),
+    .Y(_045_)
+  );
+  NOT _135_ (
+    .A(_045_),
+    .Y(data_mux2[7])
+  );
+  NOR _136_ (
+    .A(validIn),
+    .B(_006_),
+    .Y(data_Probador2[0])
+  );
+  NOR _137_ (
+    .A(validIn),
+    .B(_007_),
+    .Y(data_Probador2[1])
+  );
+  NOR _138_ (
+    .A(validIn),
+    .B(_008_),
+    .Y(data_Probador2[2])
+  );
+  NOR _139_ (
+    .A(validIn),
+    .B(_009_),
+    .Y(data_Probador2[3])
+  );
+  NOR _140_ (
+    .A(validIn),
+    .B(_010_),
+    .Y(data_Probador2[4])
+  );
+  NOR _141_ (
+    .A(validIn),
+    .B(_011_),
+    .Y(data_Probador2[5])
+  );
+  NOR _142_ (
+    .A(validIn),
+    .B(_012_),
+    .Y(data_Probador2[6])
+  );
+  NOR _143_ (
+    .A(validIn),
+    .B(_013_),
+    .Y(data_Probador2[7])
+  );
+  NAND _144_ (
+    .A(validIn),
+    .B(In1[0]),
+    .Y(_046_)
+  );
+  NOT _145_ (
+    .A(_046_),
+    .Y(data_mux1[0])
+  );
+  NAND _146_ (
+    .A(validIn),
+    .B(In1[1]),
+    .Y(_047_)
+  );
+  NOT _147_ (
+    .A(_047_),
+    .Y(data_mux1[1])
+  );
+  NAND _148_ (
+    .A(validIn),
+    .B(In1[2]),
+    .Y(_048_)
+  );
+  NOT _149_ (
+    .A(_048_),
+    .Y(data_mux1[2])
+  );
+  NAND _150_ (
+    .A(validIn),
+    .B(In1[3]),
+    .Y(_049_)
+  );
+  NOT _151_ (
+    .A(_049_),
+    .Y(data_mux1[3])
+  );
+  NAND _152_ (
+    .A(validIn),
+    .B(In1[4]),
+    .Y(_050_)
+  );
+  NOT _153_ (
+    .A(_050_),
+    .Y(data_mux1[4])
+  );
+  NAND _154_ (
+    .A(validIn),
+    .B(In1[5]),
+    .Y(_051_)
+  );
+  NOT _155_ (
+    .A(_051_),
+    .Y(data_mux1[5])
+  );
+  NAND _156_ (
+    .A(validIn),
+    .B(In1[6]),
+    .Y(_052_)
+  );
+  NOT _157_ (
+    .A(_052_),
+    .Y(data_mux1[6])
+  );
+  NAND _158_ (
+    .A(validIn),
+    .B(In1[7]),
+    .Y(_053_)
+  );
+  NOT _159_ (
+    .A(_053_),
+    .Y(data_mux1[7])
+  );
+  NOR _160_ (
+    .A(validIn),
+    .B(_014_),
+    .Y(data_Probador1[0])
+  );
+  NOR _161_ (
+    .A(validIn),
+    .B(_015_),
+    .Y(data_Probador1[1])
+  );
+  NOR _162_ (
+    .A(validIn),
+    .B(_016_),
+    .Y(data_Probador1[2])
+  );
+  NOR _163_ (
+    .A(validIn),
+    .B(_017_),
+    .Y(data_Probador1[3])
+  );
+  NOR _164_ (
+    .A(validIn),
+    .B(_018_),
+    .Y(data_Probador1[4])
+  );
+  NOR _165_ (
+    .A(validIn),
+    .B(_019_),
+    .Y(data_Probador1[5])
+  );
+  NOR _166_ (
+    .A(validIn),
+    .B(_020_),
+    .Y(data_Probador1[6])
+  );
+  NOR _167_ (
+    .A(validIn),
+    .B(_021_),
+    .Y(data_Probador1[7])
+  );
+  NAND _168_ (
+    .A(validIn),
+    .B(In0[0]),
+    .Y(_054_)
+  );
+  NOT _169_ (
+    .A(_054_),
+    .Y(data_mux0[0])
+  );
+  NAND _170_ (
+    .A(validIn),
+    .B(In0[1]),
+    .Y(_055_)
+  );
+  NOT _171_ (
+    .A(_055_),
+    .Y(data_mux0[1])
+  );
+  NAND _172_ (
+    .A(validIn),
+    .B(In0[2]),
+    .Y(_056_)
+  );
+  NOT _173_ (
+    .A(_056_),
+    .Y(data_mux0[2])
+  );
+  NAND _174_ (
+    .A(validIn),
+    .B(In0[3]),
+    .Y(_057_)
+  );
+  NOT _175_ (
+    .A(_057_),
+    .Y(data_mux0[3])
+  );
+  NAND _176_ (
+    .A(validIn),
+    .B(In0[4]),
+    .Y(_058_)
+  );
+  NOT _177_ (
+    .A(_058_),
+    .Y(data_mux0[4])
+  );
+  NAND _178_ (
+    .A(validIn),
+    .B(In0[5]),
+    .Y(_059_)
+  );
+  NOT _179_ (
+    .A(_059_),
+    .Y(data_mux0[5])
+  );
+  NAND _180_ (
+    .A(validIn),
+    .B(In0[6]),
+    .Y(_060_)
+  );
+  NOT _181_ (
+    .A(_060_),
+    .Y(data_mux0[6])
+  );
+  NAND _182_ (
+    .A(validIn),
+    .B(In0[7]),
+    .Y(_061_)
+  );
+  NOT _183_ (
+    .A(_061_),
+    .Y(data_mux0[7])
+  );
+  NOR _184_ (
+    .A(validIn),
+    .B(_022_),
+    .Y(data_Probador0[0])
+  );
+  NOR _185_ (
+    .A(validIn),
+    .B(_023_),
+    .Y(data_Probador0[1])
+  );
+  NOR _186_ (
+    .A(validIn),
+    .B(_024_),
+    .Y(data_Probador0[2])
+  );
+  NOR _187_ (
+    .A(validIn),
+    .B(_025_),
+    .Y(data_Probador0[3])
+  );
+  NOR _188_ (
+    .A(validIn),
+    .B(_026_),
+    .Y(data_Probador0[4])
+  );
+  NOR _189_ (
+    .A(validIn),
+    .B(_027_),
+    .Y(data_Probador0[5])
+  );
+  NOR _190_ (
+    .A(validIn),
+    .B(_028_),
+    .Y(data_Probador0[6])
+  );
+  NOR _191_ (
+    .A(validIn),
+    .B(_029_),
+    .Y(data_Probador0[7])
+  );
 endmodule

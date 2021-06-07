@@ -1,7 +1,6 @@
 `timescale 	1ns				/ 100ps
-`include "Demux_1x2_8Bits.v"
+`include "Demux_1x4_8Bits.v"
 `include "probadorDemux.v"
-`include "phy_tx_estruct.v"
 
 
 module BancoPruebaDemux; // Testbench

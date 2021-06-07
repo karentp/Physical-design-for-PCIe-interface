@@ -11,6 +11,7 @@ module phy_tx(
     input clk4,
     input valid0, valid1, valid2, valid3,
     input validIn, 
+    input reset,
     output [7:0] data_out_conductual,
     output valid_out_conductual,
 
@@ -60,21 +61,23 @@ Recirculacion Recirculacion_testbench (
 ///// L1
 
 Mux2x1_8Bits MUX2x1_1 (
-    .In0(In0_good),
-    .In1(In1_good),
+    .In0(In1_good),
+    .In1(In0_good),
     .clk(clk2),
-    .valid0(valid0),
-    .valid1(valid1),
+    .reset(reset),
+    .valid0(valid1),
+    .valid1(valid0),
     .outValid(valid_out_1),
     .data_out(out_temp1)
 ); 
 
 Mux2x1_8Bits MUX2x1_2 (
-    .In0(In2_good),
-    .In1(In3_good),
+    .In0(In3_good),
+    .In1(In2_good),
     .clk(clk2),
-    .valid0(valid2),
-    .valid1(valid3),
+    .reset(reset),
+    .valid0(valid3),
+    .valid1(valid2),
     .outValid(valid_out_2),
     .data_out(out_temp2)
 ); 
@@ -88,6 +91,7 @@ Mux2x1_8Bits MUX2x1_3 (
     .In0(out_temp2),
     .In1(out_temp1),
     .clk(clk4),
+    .reset(reset),
     .valid0(valid_out_2),
     .valid1(valid_out_1),
     .data_out(data_out_conductual),
