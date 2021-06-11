@@ -1,0 +1,78 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri Jun 11 05:56:47 2021
+[*]
+[dumpfile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/phy_rx/phy_rx.vcd"
+[dumpfile_mtime] "Tue Jun  8 05:28:10 2021"
+[dumpfile_size] 114753
+[savefile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/phy_rx/phy_rx_final.gtkw"
+[timestart] 0
+[size] 1366 745
+[pos] -61 -61
+*-17.477192 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 192
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 209
+@28
+[color] 1
+BancoPrueba_Phy_rx.clk
+[color] 1
+BancoPrueba_Phy_rx.clk_2f
+[color] 1
+BancoPrueba_Phy_rx.clk_4f
+[color] 1
+BancoPrueba_Phy_rx.clk_32f
+BancoPrueba_Phy_rx.data_in
+@22
+BancoPrueba_Phy_rx.data2send_to_LDMX[7:0]
+BancoPrueba_Phy_rx.data2send_to_LDMX_estruct[7:0]
+[color] 7
+BancoPrueba_Phy_rx.data_out0_conductual[7:0]
+[color] 7
+BancoPrueba_Phy_rx.data_out1_conductual[7:0]
+[color] 7
+BancoPrueba_Phy_rx.data_out2_conductual[7:0]
+[color] 7
+BancoPrueba_Phy_rx.data_out3_conductual[7:0]
+@28
+[color] 3
+BancoPrueba_Phy_rx.outValid0_conductual
+[color] 3
+BancoPrueba_Phy_rx.outValid1_conductual
+[color] 3
+BancoPrueba_Phy_rx.outValid2_conductual
+[color] 3
+BancoPrueba_Phy_rx.outValid3_conductual
+@22
+[color] 7
+BancoPrueba_Phy_rx.data_out0_estructural[7:0]
+[color] 7
+BancoPrueba_Phy_rx.data_out1_estructural[7:0]
+[color] 7
+BancoPrueba_Phy_rx.data_out2_estructural[7:0]
+[color] 7
+BancoPrueba_Phy_rx.data_out3_estructural[7:0]
+@28
+[color] 3
+BancoPrueba_Phy_rx.outValid0_estructural
+[color] 3
+BancoPrueba_Phy_rx.outValid1_estructural
+[color] 3
+BancoPrueba_Phy_rx.outValid2_estructural
+[color] 3
+BancoPrueba_Phy_rx.outValid3_estructural
+[color] 2
+BancoPrueba_Phy_rx.active_to_PS
+[color] 2
+BancoPrueba_Phy_rx.active_estruct_to_PS
+[color] 2
+BancoPrueba_Phy_rx.valid_out_to_LDMX
+[color] 2
+BancoPrueba_Phy_rx.valid_out_to_LDMX_estruct
+[color] 5
+BancoPrueba_Phy_rx.data_out_estruct
+[color] 5
+BancoPrueba_Phy_rx.data_out
+[pattern_trace] 1
+[pattern_trace] 0

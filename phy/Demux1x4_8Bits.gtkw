@@ -1,0 +1,63 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri Jun  4 05:42:16 2021
+[*]
+[dumpfile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/phy_rx/Demux1x4_8Bits.vcd"
+[dumpfile_mtime] "Fri Jun  4 05:39:21 2021"
+[dumpfile_size] 45891
+[savefile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/Physical-design-for-PCIe-interface/phy_rx/Demux1x4_8Bits.gtkw"
+[timestart] 0
+[size] 1366 745
+[pos] -139 -139
+*-17.148668 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 192
+[signals_width] 193
+[sst_expanded] 1
+[sst_vpaned_height] 209
+@28
+[color] 1
+BancoPruebaDemux1x4_8Bits.clk
+[color] 2
+BancoPruebaDemux1x4_8Bits.clk2
+[color] 3
+BancoPruebaDemux1x4_8Bits.clk4
+@22
+BancoPruebaDemux1x4_8Bits.In[7:0]
+@28
+BancoPruebaDemux1x4_8Bits.validIn
+@22
+[color] 5
+BancoPruebaDemux1x4_8Bits.data_out0_conductual[7:0]
+[color] 5
+BancoPruebaDemux1x4_8Bits.data_out1_conductual[7:0]
+[color] 5
+BancoPruebaDemux1x4_8Bits.data_out2_conductual[7:0]
+[color] 5
+BancoPruebaDemux1x4_8Bits.data_out3_conductual[7:0]
+[color] 6
+BancoPruebaDemux1x4_8Bits.data_out0_estructural[7:0]
+[color] 6
+BancoPruebaDemux1x4_8Bits.data_out1_estructural[7:0]
+[color] 6
+BancoPruebaDemux1x4_8Bits.data_out2_estructural[7:0]
+[color] 6
+BancoPruebaDemux1x4_8Bits.data_out3_estructural[7:0]
+@28
+[color] 2
+BancoPruebaDemux1x4_8Bits.outValid0_conductual
+[color] 2
+BancoPruebaDemux1x4_8Bits.outValid1_conductual
+[color] 2
+BancoPruebaDemux1x4_8Bits.outValid2_conductual
+[color] 2
+BancoPruebaDemux1x4_8Bits.outValid3_conductual
+[color] 1
+BancoPruebaDemux1x4_8Bits.outValid0_estructural
+[color] 1
+BancoPruebaDemux1x4_8Bits.outValid1_estructural
+[color] 1
+BancoPruebaDemux1x4_8Bits.outValid2_estructural
+[color] 1
+BancoPruebaDemux1x4_8Bits.outValid3_estructural
+[pattern_trace] 1
+[pattern_trace] 0

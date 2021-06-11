@@ -1,0 +1,101 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri Jun 11 05:40:26 2021
+[*]
+[dumpfile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/phy/phy.vcd"
+[dumpfile_mtime] "Fri Jun 11 05:36:45 2021"
+[dumpfile_size] 679312
+[savefile] "/mnt/c/Users/felip/Documents/1s2021/DigitalesII/Proyecto/phy/phy_final.gtkw"
+[timestart] 0
+[size] 1366 745
+[pos] -35 -35
+*-16.909203 46700 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 192
+[signals_width] 222
+[sst_expanded] 1
+[sst_vpaned_height] 209
+@28
+[color] 1
+BancoPruebas_phy.clk
+[color] 1
+BancoPruebas_phy.clk_2f
+[color] 1
+BancoPruebas_phy.clk_4f
+[color] 1
+BancoPruebas_phy.clk_32f
+@22
+[color] 6
+BancoPruebas_phy.In0[7:0]
+[color] 6
+BancoPruebas_phy.In1[7:0]
+[color] 6
+BancoPruebas_phy.In2[7:0]
+[color] 6
+BancoPruebas_phy.In3[7:0]
+@28
+[color] 2
+BancoPruebas_phy.valid0
+@29
+[color] 2
+BancoPruebas_phy.valid1
+@28
+[color] 2
+BancoPruebas_phy.valid2
+[color] 2
+BancoPruebas_phy.valid3
+@22
+[color] 7
+BancoPruebas_phy.data_out0_conductual[7:0]
+[color] 7
+BancoPruebas_phy.data_out1_conductual[7:0]
+[color] 7
+BancoPruebas_phy.data_out2_conductual[7:0]
+[color] 7
+BancoPruebas_phy.data_out3_conductual[7:0]
+@28
+[color] 3
+BancoPruebas_phy.outValid0_conductual
+[color] 3
+BancoPruebas_phy.outValid1_conductual
+[color] 3
+BancoPruebas_phy.outValid2_conductual
+[color] 3
+BancoPruebas_phy.outValid3_conductual
+@22
+[color] 7
+BancoPruebas_phy.data_out0_estructural[7:0]
+[color] 7
+BancoPruebas_phy.data_out1_estructural[7:0]
+[color] 7
+BancoPruebas_phy.data_out2_estructural[7:0]
+[color] 7
+BancoPruebas_phy.data_out3_estructural[7:0]
+@28
+[color] 3
+BancoPruebas_phy.outValid0_estructural
+[color] 3
+BancoPruebas_phy.outValid1_estructural
+[color] 3
+BancoPruebas_phy.outValid2_estructural
+[color] 3
+BancoPruebas_phy.outValid3_estructural
+@22
+BancoPruebas_phy.data_Probador0[7:0]
+BancoPruebas_phy.data_Probador1[7:0]
+BancoPruebas_phy.data_Probador2[7:0]
+BancoPruebas_phy.data_Probador3[7:0]
+BancoPruebas_phy.data_Probador0_estruct[7:0]
+BancoPruebas_phy.data_Probador1_estruct[7:0]
+BancoPruebas_phy.data_Probador2_estruct[7:0]
+BancoPruebas_phy.data_Probador3_estruct[7:0]
+@28
+BancoPruebas_phy.valid0_probador
+BancoPruebas_phy.valid1_probador
+BancoPruebas_phy.valid2_probador
+BancoPruebas_phy.valid3_probador
+BancoPruebas_phy.valid0_probador_estruct
+BancoPruebas_phy.valid1_probador_estruct
+BancoPruebas_phy.valid2_probador_estruct
+BancoPruebas_phy.valid3_probador_estruct
+[pattern_trace] 1
+[pattern_trace] 0
