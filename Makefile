@@ -1,5 +1,14 @@
 all: Autoinst BancoPruebas TruthTable GtkWave
 
+phy_tx: Auto_phy_tx
+
+Auto_phy_tx: BancoPruebas_phy_tx.v
+	emacs --batch  BancoPruebas_phy_tx.v  -f verilog-batch-delete-auto
+	emacs --batch  BancoPruebas_phy_tx.v  -f verilog-batch-inject-auto
+	iverilog -o BancoPruebas_phy_tx.vvp BancoPruebas_phy_tx.v 
+	vvp BancoPruebas_phy_tx.vvp
+	gtkwave phy_tx.vcd &
+
 
 TruthTable: 
 	vvp BancoPrueba_conductual.vvp
