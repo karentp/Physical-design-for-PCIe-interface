@@ -1,14 +1,27 @@
+# ARCHIVO DE SÍNTESIS
+
+# Read design
 read_verilog phy_tx.v
 hierarchy -check -top phy_tx
 
-proc; opt; 
+# The high-level stuff
+proc; opt; fsm; opt; memory; opt
 
-techmap -map test_map.v; opt
+# Mapping to internal cell library
+techmap; opt
 
-# mapea ffs de la biblioyeca cmos_cell
+# Mapping flip-flop to mycells.lib
 dfflibmap -liberty cmos_cells.lib
 
-#mapea compuertas logicas de la biblioteca  cmos_cells.lib
-abc -liberty  cmos_cells.lib
+# Mapping logic to mycells.lib
+abc -liberty cmos_cells.lib
 
+# Despliega Diagrama de bloques
+select -module phy_tx
+ show -prefix phy_tx -lib cmos_cells.v
+
+# Cleaning
+clean
+
+# Write synthesized design
 write_verilog phy_tx_estruct.v

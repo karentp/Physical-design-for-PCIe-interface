@@ -1,40 +1,25 @@
-DEMUX1x2CONDUCTUAL = Demux_1x2_8bits.v
-DEMUX1x4CONDUCTUAL = Demux_1x4_8bits.v
-YS1x4 = sintesisdemux1x4.ys
-YS1x2 = sintesisdemux1x2.ys
-BANCODEMUX1X2  = BancoPruebaDemux1x2_8Bits.v
-BANCODEMUX1X4  = BancoPruebaDemux1x4_8Bits.v
+all: sintesis_1 sintesis_2 sintesis_3 sintesis_4 autoinst execute sim gtkwave
 
-all: demux1x4
-
-
-# sintesis_demux1x2: $(YS41x2)
-# 	@echo ----------------------------------
-# 	@echo Corriendo Sintesis Completa para el DEMUX 1x4 de 8 bits: 
-# 	@echo ----------------------------------
-# 	yosys $(YS1x2)
-# 	@echo ----------------------------------
-# 	@echo Cambiando nombre al module para evitar problemas:
-# 	@echo ----------------------------------
-# 	sed -i 's/Demux_1x2_8Bits/ Demux_1x2_8Bits_estructural/'  Demux_1x2_8Bits_estructural.v
-# 	sed -i 's/data_out0/data_out0_estructural/' Demux_1x2_8Bits_estructural.v
-# 	sed -i 's/data_out1/data_out1_estructural/' Demux_1x2_8Bits_estructural.v
-# 	sed -i 's/outValid0/outValid0_estructural/' Demux_1x2_8Bits_estructural.v
-# 	sed -i 's/outValid1/outValid1_estructural/' Demux_1x2_8Bits_estructural.v
-
-sintesis_demux1x4: Demux_1x4_8Bits.ys
+sintesis_1: Demux_1x4_8Bits.ys
 	yosys Demux_1x2_8Bits.ys
 	sed -i 's/Demux_1x2_8Bits/Demux_1x2_8Bits_estructural/' Demux_1x2_8Bits_estructural.v
 	sed -i 's/data_out0_conductual/data_out0_estructural/' Demux_1x2_8Bits_estructural.v
 	sed -i 's/data_out1_conductual/data_out1_estructural/' Demux_1x2_8Bits_estructural.v
 	sed -i 's/outValid0_conductual/outValid0_estructural/' Demux_1x2_8Bits_estructural.v
 	sed -i 's/outValid1_conductual/outValid1_estructural/' Demux_1x2_8Bits_estructural.v
+	
+
+
+
 
 	yosys Demux_1x4_8Bits.ys
-
 	sed -i 's/Demux_1x2_8Bits/Demux_1x2_8Bits_estructural/' Demux_1x4_8Bits_estructural.v
 	sed -i 's/Demux_1x4_8Bits/Demux_1x4_8Bits_estructural/' Demux_1x4_8Bits_estructural.v
 	
+	sed -i 's/data2send_to_LDMX/data2send_to_LDMX_estruct/' Demux_1x4_8Bits_estructural.v
+	sed -i 's/valid_out_to_LDMX/valid_out_to_LDMX_estruct/' Demux_1x4_8Bits_estructural.v
+
+
 	sed -i 's/data_out0_conductual/data_out0_estructural/' Demux_1x4_8Bits_estructural.v
 	sed -i 's/data_out1_conductual/data_out1_estructural/' Demux_1x4_8Bits_estructural.v
 	sed -i 's/data_out2_conductual/data_out2_estructural/' Demux_1x4_8Bits_estructural.v
@@ -42,7 +27,6 @@ sintesis_demux1x4: Demux_1x4_8Bits.ys
 	sed -i 's/(data_out0_conductual)/(data_out0_estructural)/' Demux_1x4_8Bits_estructural.v
 	sed -i 's/(data_out1_conductual)/(data_out1_estructural)/' Demux_1x4_8Bits_estructural.v
 	
-
 	sed -i 's/outValid0_conductual/outValid0_estructural/' Demux_1x4_8Bits_estructural.v
 	sed -i 's/outValid1_conductual/outValid1_estructural/' Demux_1x4_8Bits_estructural.v
 	sed -i 's/outValid2_conductual/outValid2_estructural/' Demux_1x4_8Bits_estructural.v
@@ -50,22 +34,33 @@ sintesis_demux1x4: Demux_1x4_8Bits.ys
 	sed -i 's/(outValid0_conductual)/(outValid0_estructural)/' Demux_1x4_8Bits_estructural.v
 	sed -i 's/(outValid1_conductual)/(outValid1_estructural)/' Demux_1x4_8Bits_estructural.v
 
+sintesis_2:
+	yosys -s SerialParalelo_verde.ys
+	sed -i 's/SerialParalelo_verde/SerialParalelo_verde_estruct/g' ./SerialParalelo_verde_estruct.v
+	sed -i 's/data_out/data_out_estruct/g' ./SerialParalelo_verde_estruct.v
+	sed -i 's/active/active_estruct/g' ./SerialParalelo_verde_estruct.v
+	sed -i 's/data2send_to_LDMX/data2send_to_LDMX_estruct/g' ./SerialParalelo_verde_estruct.v
+	sed -i 's/valid_out_to_LDMX/valid_out_to_LDMX_estruct/g' ./SerialParalelo_verde_estruct.v
+
+sintesis_3:
+	yosys -s ParaleloSerial_verde.ys
+
+	sed -i 's/ParaleloSerial_verde/ParaleloSerial_verde_estruct/' ./ParaleloSerial_verde_estruct.v
+
+	sed -i 's/data_out/data_out_estruct/' ./ParaleloSerial_verde_estruct.v
+
+sintesis_4:
+	yosys -s phy-rx.ys
+
 autoinst:
-	emacs --batch  BancoPruebaDemux1x4_8Bits.v  -f verilog-batch-delete-auto
-	emacs --batch  BancoPruebaDemux1x4_8Bits.v  -f verilog-batch-inject-auto
+	emacs --batch  BancoPrueba_Phy_rx.v  -f verilog-batch-delete-auto
+	emacs --batch  BancoPrueba_Phy_rx.v  -f verilog-batch-inject-auto
 
+execute: BancoPrueba_Phy_rx.v
+	iverilog -o BancoPrueba_Phy_rx.vpp BancoPrueba_Phy_rx.v
 
-
-prueba_demux1x4: BancoPruebaDemux1x4_8Bits.v cmos_cells.v 
-	iverilog -o BancoPruebaDemux1x4_8Bits.vvp BancoPruebaDemux1x4_8Bits.v cmos_cells.v Demux_1x2_8bits.v Demux_1x4_8Bits_estructural.v
-	vvp BancoPruebaDemux1x4_8Bits.vvp
-
-
-
-demux1x4:
-	@echo Sintesis, pruebas y gtkwave del DEMUX 1x4 de 8 bits:
-	@echo ----------------------------------
-	$(MAKE) sintesis_demux1x4
-	$(MAKE) autoinst
-	$(MAKE) prueba_demux1x4
-	gtkwave Demux1x4_8Bits.vcd &
+sim: BancoPrueba_Phy_rx.vpp
+	vvp BancoPrueba_Phy_rx.vpp
+	
+gtkwave: phy_rx.vcd
+	gtkwave phy_rx.vcd

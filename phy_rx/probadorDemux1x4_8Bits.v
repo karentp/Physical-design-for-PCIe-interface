@@ -1,5 +1,5 @@
 module probadorDemux1x4_8Bits(
-    output reg clk, clk2, clk4, clk0,
+    output reg clk, clk2, clk4, reset,
     output reg validIn,
     output reg [7:0] In,
     input outValid0_conductual,
@@ -27,12 +27,23 @@ module probadorDemux1x4_8Bits(
 	initial begin
 		$dumpfile("Demux1x4_8Bits.vcd");	
 		$dumpvars;
+		{In} <= 8'h00;
+		validIn = 1'b0; 
+		reset = 0;
+		reset = 1;
+		@(posedge clk4)
+		@(posedge clk4)
+		reset = 0;
 		
-		{validIn} = 1'b1; 
-
-		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
+		@(posedge clk)
+	@(posedge clk4);
+		{validIn} = 1'b1;
+		
+		@(posedge clk)
+		@(posedge clk)
 		
 		{In} <= 8'hFF;
+		
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
@@ -110,15 +121,15 @@ module probadorDemux1x4_8Bits(
 		
 		@(posedge clk4);	
 		{ validIn, In} <= 'b0;
+		@(posedge clk4);
+		@(posedge clk4);
 		$finish;		
 	end
 	// Reloj
-	initial	clk4 	<= 0;
+	initial	clk4 	<= 1;
 	initial	clk2 	<= 1;	
 	initial	clk 	<= 1;
-	initial clk0 	<= 1;
-	always	#20 clk4 	<= ~clk4;		// Hace "toggle" cada 20*10ns
-	always	#40 clk2 	<= ~clk2;
-	always	#10 clk 	<= ~clk;
-	always	#80 clk0 	<= ~clk0;		// Hace "toggle" cada 20*10ns
+	always	#10 clk4 	<= ~clk4;		// Hace "toggle" cada 20*10ns
+	always	#20 clk2 	<= ~clk2;
+	always	#40 clk 	<= ~clk;		// Hace "toggle" cada 20*10ns
 endmodule
