@@ -1,5 +1,5 @@
 $date
-	Mon May 24 23:54:31 2021
+	Fri Jun 11 17:17:07 2021
 $end
 $version
 	Icarus Verilog
@@ -13,160 +13,271 @@ $var wire 1 " outValid1 $end
 $var wire 1 # outValid0 $end
 $var wire 8 $ data_out1 [7:0] $end
 $var wire 8 % data_out0 [7:0] $end
-$var wire 1 & clk $end
-$var wire 8 ' In0 [7:0] $end
+$var wire 1 & clk4 $end
+$var wire 1 ' clk2 $end
+$var wire 1 ( clk $end
+$var wire 8 ) In0 [7:0] $end
 $scope module Demux1 $end
 $var wire 1 ! validIn $end
-$var wire 1 & clk $end
-$var wire 8 ( In0 [7:0] $end
-$var reg 8 ) ValorAnterior_out0 [7:0] $end
-$var reg 8 * ValorAnterior_out1 [7:0] $end
-$var reg 8 + data_out0 [7:0] $end
-$var reg 8 , data_out1 [7:0] $end
+$var wire 1 & clk4 $end
+$var wire 1 ' clk2 $end
+$var wire 1 ( clk $end
+$var wire 8 * In0 [7:0] $end
+$var reg 8 + ValorAnterior_out0 [7:0] $end
+$var reg 8 , ValorAnterior_out1 [7:0] $end
+$var reg 8 - data_out0 [7:0] $end
+$var reg 8 . data_out1 [7:0] $end
 $var reg 1 # outValid0 $end
 $var reg 1 " outValid1 $end
-$var reg 1 - selector $end
-$var reg 1 . validTemp_In0 $end
-$var reg 1 / validTemp_In1 $end
+$var reg 1 / selector $end
+$var reg 1 0 selector2 $end
+$var reg 1 1 validTemp_In0 $end
+$var reg 1 2 validTemp_In1 $end
 $upscope $end
 $scope module prob $end
-$var wire 8 0 data_out0 [7:0] $end
-$var wire 8 1 data_out1 [7:0] $end
+$var wire 8 3 data_out0 [7:0] $end
+$var wire 8 4 data_out1 [7:0] $end
 $var wire 1 # outValid0 $end
 $var wire 1 " outValid1 $end
-$var reg 8 2 In0 [7:0] $end
-$var reg 1 & clk $end
+$var reg 8 5 In0 [7:0] $end
+$var reg 1 ( clk $end
+$var reg 1 ' clk2 $end
+$var reg 1 & clk4 $end
 $var reg 1 ! validIn $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 2
-bx 1
-bx 0
-x/
-1.
-0-
+bx 5
+bx 4
+bx 3
+12
+x1
+10
+0/
+bx .
+bx -
 bx ,
 bx +
 bx *
-b0 )
-b0 (
-b0 '
+bx )
+1(
+1'
 0&
 bx %
 bx $
 x#
-x"
+1"
 1!
 $end
+#100
+0(
 #200
+00
 1/
-b1 *
-1#
-b0 %
-b0 +
-b0 0
-1-
-b1 '
-b1 (
-b1 2
+b11111111 )
+b11111111 *
+b11111111 5
+1(
 1&
+#300
+0(
 #400
+1(
 0&
+0'
+#500
+0(
 #600
-b10 )
-b10 '
-b10 (
-b10 2
-1"
-b1 $
-b1 ,
-b1 1
-0-
+b11011101 ,
+b11011101 )
+b11011101 *
+b11011101 5
+11
+b11111111 +
+10
+0/
+1(
 1&
+#700
+0(
 #800
+b11011101 $
+b11011101 .
+b11011101 4
+1#
+b11111111 %
+b11111111 -
+b11111111 3
+1(
 0&
+1'
+#900
+0(
 #1000
-b11 *
-b10 %
-b10 +
-b10 0
-1-
-b11 '
-b11 (
-b11 2
+00
+1/
+b11101110 )
+b11101110 *
+b11101110 5
+1(
 1&
+#1100
+0(
 #1200
+1(
 0&
+0'
+#1300
+0(
 #1400
-b100 )
-b100 '
-b100 (
-b100 2
-b11 $
-b11 ,
-b11 1
-0-
+b11001100 ,
+b11001100 )
+b11001100 *
+b11001100 5
+b11101110 +
+10
+0/
+1(
 1&
+#1500
+0(
 #1600
+b11001100 $
+b11001100 .
+b11001100 4
+b11101110 %
+b11101110 -
+b11101110 3
+1(
 0&
+1'
+#1700
+0(
 #1800
-b101 *
-b100 %
-b100 +
-b100 0
-1-
-b101 '
-b101 (
-b101 2
+00
+1/
+b10111011 )
+b10111011 *
+b10111011 5
+1(
 1&
+#1900
+0(
 #2000
+1(
 0&
+0'
+#2100
+0(
 #2200
-b110 )
-b110 '
-b110 (
-b110 2
-b101 $
-b101 ,
-b101 1
-0-
+b10011001 ,
+b10011001 )
+b10011001 *
+b10011001 5
+b10111011 +
+10
+0/
+1(
 1&
+#2300
+0(
 #2400
+b10011001 $
+b10011001 .
+b10011001 4
+b10111011 %
+b10111011 -
+b10111011 3
+1(
 0&
+1'
+#2500
+0(
 #2600
-b111 *
-b110 %
-b110 +
-b110 0
-1-
-b111 '
-b111 (
-b111 2
+00
+1/
+b10101010 )
+b10101010 *
+b10101010 5
+1(
 1&
+#2700
+0(
 #2800
+1(
 0&
+0'
+#2900
+0(
 #3000
-b1000 )
-b1000 '
-b1000 (
-b1000 2
-b111 $
-b111 ,
-b111 1
-0-
+b10001000 ,
+b10001000 )
+b10001000 *
+b10001000 5
+b10101010 +
+10
+0/
+1(
 1&
+#3100
+0(
 #3200
+b10001000 $
+b10001000 .
+b10001000 4
+b10101010 %
+b10101010 -
+b10101010 3
+1(
 0&
+1'
+#3300
+0(
 #3400
-b1000 %
-b1000 +
-b1000 0
-1-
+00
+1/
+1(
+1&
+#3500
+0(
+#3600
+1(
+0&
+0'
+#3700
+0(
+#3800
+b1110111 ,
+b1110111 )
+b1110111 *
+b1110111 5
+b10001000 +
+10
+0/
+1(
+1&
+#3900
+0(
+#4000
+b1110111 $
+b1110111 .
+b1110111 4
+b10001000 %
+b10001000 -
+b10001000 3
+1(
+0&
+1'
+#4100
+0(
+#4200
+00
+1/
 0!
-b0 '
-b0 (
-b0 2
+b0 )
+b0 *
+b0 5
+1(
 1&

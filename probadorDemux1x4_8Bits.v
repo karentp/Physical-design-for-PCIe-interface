@@ -1,73 +1,77 @@
-module probadorDemux( // Módulo probador: generador de señales y monitor de datos
-output reg clk4, clk2,clk,
-output reg validIn,
-output reg [7:0] In0,
-input [7:0] data_out0,
-input [7:0] data_out1,
-input outValid0,
-input outValid1
+module probadorDemux1x4_8Bits(
+    output reg clk, clk2, clk4, clk0,
+    output reg validIn,
+    output reg [7:0] In,
+    input outValid0,
+    input outValid1,
+    input outValid2,
+    input outValid3,
+    input [7:0]  data_out0,
+    input [7:0]  data_out1,
+    input [7:0]  data_out2,
+    input [7:0]  data_out3 
 );
 
-
 	initial begin
-		$dumpfile("PruebasDemux.vcd");	
+		$dumpfile("Pruebademux1x4_8Bits.vcd");	
 		$dumpvars;
 		
-		//$display ("\t\t\tclk,\tS,\tVal,\tin0,\tin1,\toutCon, \toutEstr,\tcont");
+		//$display ("\t\t\tclk,\tS,\tVal,\tIn,\tin1,\toutCon, \toutEstr,\tcont");
 		
 		//$monitor($time,"\t%b\t%b\t%b\t%b\t%b\t%b\t\t%b", clk, v);
-		//{In0} =  8'h00;	// A los 2 bits, asigna un tipo bit con valor 0.
-        {validIn} = 1'b1; 
+		{validIn} = 1'b1; 
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'hFF;
+		{In} <= 8'hFF;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'hDD;
+		{In} <= 8'hDD;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'hEE;
+		{In} <= 8'hEE;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'hCC;
+		{In} <= 8'hCC;
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'hBB;
+		{In} <= 8'hBB;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'h99;
+		{In} <= 8'h99;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'hAA;
+		{In} <= 8'hAA;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'h88;
+		{In} <= 8'h88;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'h88;
+		{In} <= 8'h88;
 
 		@(posedge clk4);	// Espera/sincroniza con el flanco positivo del reloj
 		
-		{In0} <= 8'h77;
+		{In} <= 8'h77;
           
 		
 		@(posedge clk4);	
-		{ validIn, In0} <= 'b0;
+		{ validIn, In} <= 'b0;
 		$finish;		
 	end
 	// Reloj
 	initial	clk4 	<= 0;
 	initial	clk2 	<= 1;	
-	initial	clk 	<= 1;	
+	initial	clk 	<= 1;
+	initial clk0 	<= 1;
 	always	#20 clk4 	<= ~clk4;		// Hace "toggle" cada 20*10ns
 	always	#40 clk2 	<= ~clk2;
 	always	#10 clk 	<= ~clk;
+	always	#80 clk0 	<= ~clk0;		// Hace "toggle" cada 20*10ns
 endmodule

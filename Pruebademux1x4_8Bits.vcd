@@ -1,0 +1,528 @@
+$date
+	Fri Jun 11 19:13:26 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPruebaDemux1x4_8Bits $end
+$var wire 1 ! outValid0 $end
+$var wire 1 " outValid1 $end
+$var wire 1 # outValid2 $end
+$var wire 1 $ outValid3 $end
+$var wire 1 % validOut3 $end
+$var wire 1 & validOut2 $end
+$var wire 1 ' validOut1 $end
+$var wire 1 ( validOut0 $end
+$var wire 1 ) validIn $end
+$var wire 8 * data_out3 [7:0] $end
+$var wire 8 + data_out2 [7:0] $end
+$var wire 8 , data_out1 [7:0] $end
+$var wire 8 - data_out0 [7:0] $end
+$var wire 1 . clk4 $end
+$var wire 1 / clk2 $end
+$var wire 1 0 clk0 $end
+$var wire 1 1 clk $end
+$var wire 8 2 In [7:0] $end
+$scope module Demux_1x4 $end
+$var wire 1 % validOut3 $end
+$var wire 1 & validOut2 $end
+$var wire 1 ' validOut1 $end
+$var wire 1 ( validOut0 $end
+$var wire 1 ) validIn $end
+$var wire 1 3 valid1Temp $end
+$var wire 1 4 valid0Temp $end
+$var wire 8 5 salida1Demux1 [7:0] $end
+$var wire 8 6 salida0Demux1 [7:0] $end
+$var wire 8 7 data_out3 [7:0] $end
+$var wire 8 8 data_out2 [7:0] $end
+$var wire 8 9 data_out1 [7:0] $end
+$var wire 8 : data_out0 [7:0] $end
+$var wire 1 . clk4 $end
+$var wire 1 / clk2 $end
+$var wire 1 0 clk0 $end
+$var wire 1 1 clk $end
+$var wire 8 ; In [7:0] $end
+$scope module Demux1 $end
+$var wire 1 ) validIn $end
+$var wire 1 . clk4 $end
+$var wire 1 / clk2 $end
+$var wire 1 1 clk $end
+$var wire 8 < In0 [7:0] $end
+$var reg 8 = ValorAnterior_out0 [7:0] $end
+$var reg 8 > ValorAnterior_out1 [7:0] $end
+$var reg 8 ? data_out0 [7:0] $end
+$var reg 8 @ data_out1 [7:0] $end
+$var reg 1 4 outValid0 $end
+$var reg 1 3 outValid1 $end
+$var reg 1 A selector $end
+$var reg 1 B selector2 $end
+$var reg 1 C validTemp_In0 $end
+$var reg 1 D validTemp_In1 $end
+$upscope $end
+$scope module Demux2 $end
+$var wire 8 E In0 [7:0] $end
+$var wire 1 F clk $end
+$var wire 1 G clk2 $end
+$var wire 1 4 validIn $end
+$var wire 1 / clk4 $end
+$var reg 8 H ValorAnterior_out0 [7:0] $end
+$var reg 8 I ValorAnterior_out1 [7:0] $end
+$var reg 8 J data_out0 [7:0] $end
+$var reg 8 K data_out1 [7:0] $end
+$var reg 1 ( outValid0 $end
+$var reg 1 ' outValid1 $end
+$var reg 1 L selector $end
+$var reg 1 M selector2 $end
+$var reg 1 N validTemp_In0 $end
+$var reg 1 O validTemp_In1 $end
+$upscope $end
+$scope module Demux3 $end
+$var wire 8 P In0 [7:0] $end
+$var wire 1 Q clk $end
+$var wire 1 R clk2 $end
+$var wire 1 3 validIn $end
+$var wire 1 / clk4 $end
+$var reg 8 S ValorAnterior_out0 [7:0] $end
+$var reg 8 T ValorAnterior_out1 [7:0] $end
+$var reg 8 U data_out0 [7:0] $end
+$var reg 8 V data_out1 [7:0] $end
+$var reg 1 & outValid0 $end
+$var reg 1 % outValid1 $end
+$var reg 1 W selector $end
+$var reg 1 X selector2 $end
+$var reg 1 Y validTemp_In0 $end
+$var reg 1 Z validTemp_In1 $end
+$upscope $end
+$upscope $end
+$scope module prob $end
+$var wire 8 [ data_out0 [7:0] $end
+$var wire 8 \ data_out1 [7:0] $end
+$var wire 8 ] data_out2 [7:0] $end
+$var wire 8 ^ data_out3 [7:0] $end
+$var wire 1 ! outValid0 $end
+$var wire 1 " outValid1 $end
+$var wire 1 # outValid2 $end
+$var wire 1 $ outValid3 $end
+$var reg 8 _ In [7:0] $end
+$var reg 1 1 clk $end
+$var reg 1 0 clk0 $end
+$var reg 1 / clk2 $end
+$var reg 1 . clk4 $end
+$var reg 1 ) validIn $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx _
+bx ^
+bx ]
+bx \
+bx [
+xZ
+xY
+0X
+xW
+bx V
+bx U
+bx T
+bx S
+0R
+1Q
+bx P
+xO
+xN
+0M
+xL
+bx K
+bx J
+bx I
+bx H
+0G
+1F
+bx E
+1D
+xC
+1B
+0A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+x4
+13
+bx 2
+11
+10
+1/
+0.
+bx -
+bx ,
+bx +
+bx *
+1)
+x(
+x'
+x&
+x%
+z$
+z#
+z"
+z!
+$end
+#100
+01
+#200
+0B
+1A
+b11111111 2
+b11111111 ;
+b11111111 <
+b11111111 _
+0Q
+0F
+11
+1.
+#300
+01
+#400
+1Q
+1F
+11
+0.
+0/
+#500
+01
+#600
+b11011101 >
+b11011101 2
+b11011101 ;
+b11011101 <
+b11011101 _
+1C
+b11111111 =
+1B
+0A
+0Q
+0F
+11
+1.
+#700
+01
+#800
+b11011101 5
+b11011101 @
+b11011101 P
+14
+b11111111 6
+b11111111 ?
+b11111111 E
+1X
+1W
+1M
+1L
+1Q
+1F
+1R
+1G
+11
+0.
+1/
+00
+#900
+01
+#1000
+0B
+1A
+b11101110 2
+b11101110 ;
+b11101110 <
+b11101110 _
+0Q
+0F
+11
+1.
+#1100
+01
+#1200
+1Q
+1F
+11
+0.
+0/
+#1300
+01
+#1400
+b11001100 >
+b11001100 2
+b11001100 ;
+b11001100 <
+b11001100 _
+b11101110 =
+1B
+0A
+0Q
+0F
+11
+1.
+#1500
+01
+#1600
+1O
+b11101110 I
+1Z
+b11001100 T
+b11001100 5
+b11001100 @
+b11001100 P
+b11101110 6
+b11101110 ?
+b11101110 E
+1N
+b11111111 H
+0M
+0L
+1Y
+b11011101 S
+0X
+0W
+1Q
+1F
+0R
+0G
+11
+0.
+1/
+10
+#1700
+01
+#1800
+0B
+1A
+b10111011 2
+b10111011 ;
+b10111011 <
+b10111011 _
+0Q
+0F
+11
+1.
+#1900
+01
+#2000
+1%
+b11001100 *
+b11001100 7
+b11001100 V
+b11001100 ^
+1'
+b11101110 ,
+b11101110 9
+b11101110 K
+b11101110 \
+1(
+b11111111 -
+b11111111 :
+b11111111 J
+b11111111 [
+1&
+b11011101 +
+b11011101 8
+b11011101 U
+b11011101 ]
+1Q
+1F
+11
+0.
+0/
+#2100
+01
+#2200
+b10011001 >
+b10011001 2
+b10011001 ;
+b10011001 <
+b10011001 _
+b10111011 =
+1B
+0A
+0Q
+0F
+11
+1.
+#2300
+01
+#2400
+b10011001 5
+b10011001 @
+b10011001 P
+b10111011 6
+b10111011 ?
+b10111011 E
+1X
+1W
+1M
+1L
+1Q
+1F
+1R
+1G
+11
+0.
+1/
+00
+#2500
+01
+#2600
+0B
+1A
+b10101010 2
+b10101010 ;
+b10101010 <
+b10101010 _
+0Q
+0F
+11
+1.
+#2700
+01
+#2800
+1Q
+1F
+11
+0.
+0/
+#2900
+01
+#3000
+b10001000 >
+b10001000 2
+b10001000 ;
+b10001000 <
+b10001000 _
+b10101010 =
+1B
+0A
+0Q
+0F
+11
+1.
+#3100
+01
+#3200
+b10101010 I
+b10001000 T
+b10001000 5
+b10001000 @
+b10001000 P
+b10101010 6
+b10101010 ?
+b10101010 E
+b10111011 H
+0M
+0L
+b10011001 S
+0X
+0W
+1Q
+1F
+0R
+0G
+11
+0.
+1/
+10
+#3300
+01
+#3400
+0B
+1A
+0Q
+0F
+11
+1.
+#3500
+01
+#3600
+b10001000 *
+b10001000 7
+b10001000 V
+b10001000 ^
+b10101010 ,
+b10101010 9
+b10101010 K
+b10101010 \
+b10111011 -
+b10111011 :
+b10111011 J
+b10111011 [
+b10011001 +
+b10011001 8
+b10011001 U
+b10011001 ]
+1Q
+1F
+11
+0.
+0/
+#3700
+01
+#3800
+b1110111 >
+b1110111 2
+b1110111 ;
+b1110111 <
+b1110111 _
+b10001000 =
+1B
+0A
+0Q
+0F
+11
+1.
+#3900
+01
+#4000
+b1110111 5
+b1110111 @
+b1110111 P
+b10001000 6
+b10001000 ?
+b10001000 E
+1X
+1W
+1M
+1L
+1Q
+1F
+1R
+1G
+11
+0.
+1/
+00
+#4100
+01
+#4200
+0B
+1A
+0)
+b0 2
+b0 ;
+b0 <
+b0 _
+0Q
+0F
+11
+1.
