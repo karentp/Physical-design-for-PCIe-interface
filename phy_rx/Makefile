@@ -1,4 +1,4 @@
-all: sintesis_1 sintesis_2 sintesis_3 autoinst execute sim gtkwave
+all: sintesis_1 sintesis_2 sintesis_3 sintesis_4 autoinst execute sim gtkwave
 
 sintesis_1: Demux_1x4_8Bits.ys
 	yosys Demux_1x2_8Bits.ys
@@ -48,6 +48,9 @@ sintesis_3:
 	sed -i 's/ParaleloSerial_verde/ParaleloSerial_verde_estruct/' ./ParaleloSerial_verde_estruct.v
 
 	sed -i 's/data_out/data_out_estruct/' ./ParaleloSerial_verde_estruct.v
+
+sintesis_4:
+	yosys -s phy-rx.ys
 
 autoinst:
 	emacs --batch  BancoPrueba_Phy_rx.v  -f verilog-batch-delete-auto

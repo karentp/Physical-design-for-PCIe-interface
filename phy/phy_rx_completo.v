@@ -1,6 +1,5 @@
 
 `include "Demux_1x4_8Bits.v"
-`include "probadorDemux1x4_8Bits.v"
 `include "Demux_1x4_8Bits_estructural.v"
 `include "cmos_cells.v"
 `include "SerialParalelo_verde.v"

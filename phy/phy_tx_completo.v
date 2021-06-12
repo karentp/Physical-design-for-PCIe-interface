@@ -1,6 +1,5 @@
 `include "phy_tx_estruct.v"
 `include "phy_tx.v"
-`include "Probador_phy_tx.v"
 `include "ParaleloSerial_azul.v"
 `include "ParaleloSerial_azul_estruct.v"
 `include "SerialParalelo_azul.v"

@@ -17,7 +17,8 @@ dfflibmap -liberty cmos_cells.lib
 abc -liberty cmos_cells.lib
 
 # Despliega Diagrama de bloques
-# show -prefix phy_tx -lib cmos_cells.v
+select -module phy_tx
+ show -prefix phy_tx -lib cmos_cells.v
 
 # Cleaning
 clean
